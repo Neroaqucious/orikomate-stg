@@ -1,0 +1,318 @@
+
+
+.contentinnerh4 h3{
+	
+	margin-bottom:0px!important;
+	}
+.contentinnerh4 p {
+	text-align:left;
+	background-color:#fbfbfb;
+	position: relative;
+
+	padding-top:7px;
+	padding-left:15px;
+	padding-bottom: .5em;
+	border-bottom: 2px solid #ccc;
+	margin-bottom:0px!important;
+	}
+.contentinnerh3 p::after {
+	position: absolute;
+	bottom: -2px;
+	left: 0;
+	z-index: 2;
+	content: '';
+	width: 94%;
+	height: 2px;
+	background-color: #EA5514;
+	}
+#deadline_parts{
+	background-color: #f5f5f5;
+	border: 3px solid #eb5e24;
+	margin-top:15px;
+	margin-bottom:15px;
+	width:836px;
+	font-size:13px;
+	}
+.deadline_parts_in{
+	padding:10px 10px 10px 0px;
+	}
+
+.deadline_parts_in h2{
+	background: url("//www.orikomate.jp/user_data/packages/prototype/img/header/header.png") no-repeat -355px -595px;
+	font-size:16px;
+	height:50px;
+	margin-left:10px;
+	overflow: hidden;
+	text-indent: 200%;
+	white-space: nowrap;
+	}
+.deadline_parts_in p.deadlinetext{
+	font-size:13px;
+	color:#000;
+	padding-bottom:3px;
+	margin-top:5px;
+	margin-left:10px;
+	border-bottom: 1px solid #aea9a9;
+	}
+#deadline_parts h3{
+	position: relative;
+	font-size:14px;
+	font-weight:bold;
+	color:#000;
+	height:auto;
+	line-height:1.5em;
+	padding:15px;
+	margin:0;
+	background-color: #f5f5f5!important;
+	}
+#deadline_parts h3 span{
+	font-size:13px;
+	font-weight:normal;
+	top:16px;
+	right:10px;
+	position: absolute;
+	}
+
+#deadline_params {
+	text-align:left;
+	font-size:13px;
+	}
+#deadline_params h3{
+	width:250px;
+	margin:0px;
+	padding:0px;
+	height:35px;
+	background: url("//www.orikomate.jp/user_data/packages/prototype/img/header/header.png") no-repeat -355px -435px;
+
+	overflow: hidden;
+	text-indent: 200%;
+	white-space: nowrap;
+	text-align:left;
+	color:#000;
+	font-size:13px;
+	background-color: #f5f5f5;
+	}
+#calendar h4{
+	width:250px;
+	margin:0px;
+	padding:0px;
+	height:35px;
+	background: url("//www.orikomate.jp/user_data/packages/prototype/img/header/header.png") no-repeat -355px -495px;
+
+	overflow: hidden;
+	text-indent: 200%;
+	white-space: nowrap;
+	text-align:left;
+	color:#000;
+	font-size:13px;
+	background-color: #f5f5f5;
+	}
+#deadline h4{
+	width:250px;
+	margin:0px;
+	padding:0px;
+	height:35px;
+	background: url("//www.orikomate.jp/user_data/packages/prototype/img/header/header.png") no-repeat -355px -553px;
+
+	overflow: hidden;
+	text-indent: 200%;
+	white-space: nowrap;
+	text-align:left;
+	color:#000;
+	font-size:13px;
+	background-color: #f5f5f5;
+	}
+
+
+
+
+#deadline_params h4{
+	text-align:left;
+	margin: 0px 0 0px;
+	font-size:13px;
+	font-weight: normal;
+	background-color: #f5f5f5;
+	}
+
+#deadline_params select{
+	width:200px;
+	text-align:left;
+	margin:0 atuo;
+	padding:0;
+	margin-bottom:10px;
+	}
+#product {
+	padding:10px 10px 10px 15px;
+	display: table-cell;
+	width: 240px;
+	text-align: left;
+	}
+#product h3{
+	color:#000!important;
+	font-size:14px;
+	}
+#product h4{
+	font-weight:bold;
+	color:#000!important;
+	margin-top:5px;
+	}
+
+#calendar {
+	font-size:13px;
+	display: table-cell;
+	width: 360px;
+	background-color: #f5f5f5;
+	color: #000;
+	text-align: left;
+	}
+
+
+#calendar p {
+	height:30px;
+	line-height:30px;
+	text-align: center;
+	width: 250px;
+	font-size:13px;
+	font-weight:bold;
+	background-color: #ffffff;
+	color: #ff3300;
+	margin-bottom:5px;
+	margin-top:10px;
+	border-top: 1px solid #aea9a9;
+	border-bottom: 1px solid #aea9a9;
+	}
+
+#deadlineoutput{
+	display: table-cell;
+	width: 320px;
+	
+	}
+.delivery{
+	width:230px;
+	}
+
+#delivery_days{
+	border-top: 1px solid #aea9a9;
+	border-bottom: 1px solid #aea9a9;
+	background-color: #ffffff;
+	text-align:center;
+	color:#ff3300;
+	font-weight:bold;
+	height:40px;
+	line-height:40px;
+	font-size: 16px;
+	}
+
+.bottom_arrow{
+	margin: 5px auto;
+	display: block;
+	text-align: center;
+}
+
+.ui-datepicker-week-end a.ui-state-default {
+	font-size:13px;
+	color: #ff00cc;
+}
+.ui-datepicker-week-end.ui-state-disabled span.ui-state-default {
+	font-size:13px;
+	color: #ff66cc;
+}
+body.LC_Page_Deadline .ui-datepicker-inline {
+	margin: 0 auto;
+}
+
+#deadline{
+	display: table-cell;
+	width:270px;
+	padding-right:5px;
+	padding-bottom: 0px;
+	}
+#deadline p{
+	border-left: 0px solid #595757;
+	margin-bottom: 10px;
+	padding-left: 0px;
+	}
+.deadline_text{
+	font-size:12px;
+	line-height:1.6em;
+	margin-top:5px;
+	margin-left:10px;
+	margin-bottom:0px!important;
+	}
+
+.deadline_title {
+	width:100%;
+	position: relative;
+	display: inline-block;
+	font-size: 13px;
+	font-weight:bold;
+	color: #231815;
+	}
+#deadline_payment,
+#deadline_data,
+#deadline_delivery {
+	height:30px;
+	line-height:30px;
+    font-size: 13px;
+	background-color: #ffffff;
+    display: inline-block;
+    color: #ff3300;
+    font-weight:bold;
+    border-top: 1px solid #aea9a9;
+    border-bottom: 1px solid #aea9a9;
+    text-align: center;
+    width: 100%;
+	}
+#selected_insertion_date{
+	margin-top:3px;
+	margin-bottom:3px;
+   height:35px;
+   line-height:35px;
+    font-size: 15px;
+    background-color: #eb5e24;
+    display: inline-block;
+    color: #fff;
+    font-weight:bold;
+    border-top: 0px solid #aea9a9;
+    border-bottom: 0px solid #aea9a9;
+    text-align: center;
+    width: 100%;
+	}
+
+
+span.notice_bank{
+	font-size:12px;
+	top:0px;
+	right:0px;
+	position: absolute;
+	text-align:right;
+	margin-left: 0px;
+	vertical-align: middle;
+	}
+.notice_bank a{
+	color:#03509c;
+	}
+.notice_bank a:hover{
+	color:#eb5e24;
+	}
+
+
+span.notice {
+	color: #eb5e24;
+    line-height: 20px;
+}
+
+#orikomi_area{
+	position:relative;
+	padding-top:0px;
+	}
+.delivery p{
+	text-align:center;
+	line-height:1em;
+	margin-bottom: 10px!important;
+	margin-top:5px;
+	}
+
+.ui-datepicker-other-month{
+font-size:0px;
+}

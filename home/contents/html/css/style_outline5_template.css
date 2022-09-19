@@ -1,0 +1,317 @@
+.clearfix:after {
+    content: "."; 
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+    }
+.clearfix {
+    min-height: 1px;
+    }
+.gotyuui{
+	background-color:#fff5f5;
+	border:3px solid #ff0000;
+	background-image: url("//www.orikomate.jp/contents/img/temp/gotyuui.png");
+	background-repeat: no-repeat;
+	background-size:65px auto;
+	background-position: 10px 10px;
+	margin-bottom:25px;
+	}
+.gotyuui ul{
+	font-size:0px;
+	padding:0px;
+	margin:10px 10px 0px 10px;
+	margin-left:45px;
+	}
+
+.gotyuui ul li{
+	background-image: url("//www.orikomate.jp/contents/img/temp/check.png");
+	background-repeat: no-repeat;
+	background-size:28px auto;
+	font-size:16px;
+	line-height:1.9em;
+	padding-left:30px;
+	width:680px;
+	margin-bottom:15px;
+	}
+.templatelist{
+	width:100%;
+	}
+.templatelist_title{
+	display:table;
+	border: 1px solid #cccccc!important;
+	background: -webkit-linear-gradient(top, #fff 0%, #f0f0f0 100%);
+	background: linear-gradient(to bottom, #fff 0%, #f0f0f0 100%);
+	box-shadow: 0 -1px 0 rgba(255, 255, 255, 1) inset;
+	padding: 5px 5px 5px 0px!important;
+	height:80px;
+	width:830px;
+	text-align: center;
+	margin-bottom:10px;
+	*overflow:auto;
+	}
+.templatelist_title div img{
+	display:table-cell;
+	border:0px solid #ff0000;
+	padding:0px!important;
+	margin:0px!important;
+	max-width:100px;
+	max-height:90px;
+	vertical-align: middle;
+	text-align: center;
+	}
+.templatelist_title div{
+	display:table-cell;
+	vertical-align: middle;
+	min-width:105px;
+	
+	}
+.templatelist h3{
+	font-size:22px!important;
+	font-weight:bold!important;
+	margin:0px!important;
+	position: relative!important;
+	width:610px;
+	text-align: left;
+	}
+.templatelist h3 img{
+	display:inline;
+	width:27px;
+	margin-left:5px!important;
+	}
+.templatelist h3 span{
+	font-size:15px;
+	font-weight:normal!important;
+	display: inline!important;
+	height: auto!important;
+	text-indent: auto!important;
+	white-space: nowrap!important;
+	overflow: visible!important;
+	position: absolute!important;
+	right:0px;
+	top:0px;
+	}
+.templatelist p{
+	font-size:16px;
+	text-align: left;
+	padding:0px!important;
+	margin:0px!important;
+	}
+table.templatelist_table{
+	margin-bottom:55px;
+	}
+table.templatelist_table tr th{
+	text-align:center;
+	padding:13px 10px;
+	}
+table.templatelist_table tr td{
+	text-align:center;
+	padding:13px 15px;
+	width:100px;
+	}
+table.templatelist_table tr td:first-child{
+	background-color:#f0f0f0;
+	}
+table.templatelist_table tr td:last-child{
+	text-align:right;
+	width:150px;
+	}
+table.templatelist_table tr td a{
+	border-bottom:1px solid #0256e4;
+	background-image: url("//www.orikomate.jp/contents/img/temp/icon_download.png");
+	background-repeat: no-repeat;
+	background-size:30px auto;
+	background-position: right center;
+	color:#0256e4;
+	padding-right:35px;
+	}
+table.templatelist_table tr td a:hover{
+	border-bottom:1px solid #eb5e24;
+	color:#eb5e24;
+	}
+.checklist_adobe{
+	padding-top:30px;
+	padding-bottom:40px;
+	}
+img.checkpoint_adobe{
+	border:0px solid #ff0000;
+	position: absolute;
+	top:-40px;
+	right:-7px;
+	z-index:4;
+	width:330px;
+	padding:0px!important;
+	margin:0px!important;
+	}
+.checklist_adobe ul{
+	}
+.checklist_adobe ul li{
+	background-image: url("//www.orikomate.jp/contents/img/temp/checklist_li.png");
+	background-repeat: no-repeat;
+	background-size:25px auto;
+	font-size:16px;
+	line-height:1.6em;
+	padding-left:32px;
+	margin-bottom:12px;
+	width:740px;
+	}
+.checklist_adobe ul li:last-child{
+	margin-bottom:0px;
+	}
+.checklist_adobe ul li b{
+	color:#ff0000;
+	font-weight:bold;
+	}
+.checklist_adobe .text{
+	background-image: url("//www.orikomate.jp/contents/img/temp/checklist_text.png");
+	background-repeat: no-repeat;
+	background-size:100% auto;
+	width: 700px;
+	padding-left:40px;
+	margin-left:10px;
+	}
+.checklist_adobe .text p{
+	color:#ff0000!important;
+	font-weight:bold!important;
+	font-size:15px!important;
+	margin-top:0px!important;
+	padding-top:0px!important;
+	}
+.checklist_adobe1{
+	border-radius: 25px;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border:6px solid #f28603;
+	width:820px;
+	margin-left:10px;
+	position: relative;
+	}
+.checklist_adobe1 h3{
+	display:block;
+	background-image: url("//www.orikomate.jp/contents/img/temp/title_abobe1.png");
+	background-repeat: no-repeat;
+	background-size:100% auto;
+	width:500px;
+	height:200px!important;
+	overflow: hidden;
+	text-indent: 150%;
+	white-space: nowrap;
+	position: absolute;
+	top:-50px;
+	left:-20px;
+	z-index:4;
+	}
+.checklist_adobe1 h4{
+	display:block;
+	background-image: url("//www.orikomate.jp/contents/img/temp/title_adobe1_text.png");
+	background-repeat: no-repeat;
+	background-size:100% auto;
+	width:350px;
+	height:33px!important;
+	overflow: hidden;
+	text-indent: 150%;
+	white-space: nowrap;
+	border:0px!important;
+	margin:35px 0 0 15px;
+	}
+
+
+
+.checklist_adobe2{
+	border-radius: 25px;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border:6px solid #66a3d9;
+	width:820px;
+	margin-left:10px;
+	position: relative;
+	}
+.checklist_adobe2 h3{
+	display:block;
+	background-image: url("//www.orikomate.jp/contents/img/temp/title_abobe2.png");
+	background-repeat: no-repeat;
+	background-size:100% auto;
+	width:500px;
+	height:200px!important;
+	overflow: hidden;
+	text-indent: 150%;
+	white-space: nowrap;
+	position: absolute;
+	top:-50px;
+	left:-20px;
+	z-index:4;
+	}
+.checklist_adobe2 h4{
+	display:block;
+	background-image: url("//www.orikomate.jp/contents/img/temp/title_adobe2_text.png");
+	background-repeat: no-repeat;
+	background-size:100% auto;
+	width:350px;
+	height:33px!important;
+	overflow: hidden;
+	text-indent: 150%;
+	white-space: nowrap;
+	border:0px!important;
+	margin:35px 0 0 15px;
+	}
+.checklist_last{
+	margin-bottom:50px;
+	position: relative;
+	}
+.checklist_last h3{
+	background-image: url("//www.orikomate.jp/contents/img/temp/under_tyuui.png");
+	background-repeat: no-repeat;
+	background-size:260px auto;
+	background-position: right top;
+
+	padding:0px!important;
+	margin:0px!important;
+	overflow: hidden;
+	text-indent: 150%;
+	white-space: nowrap;
+	width:260px;
+	height:100px!important;
+
+	position: absolute;
+	top:0px;
+	right:0px;
+	}
+.checklist_last ol{
+	font-size:0px;
+	padding:0px!important;
+	margin:0px!important;
+	counter-reset: li; 
+	}
+.checklist_last ol li{
+	font-size:16px;
+	line-height:1.8em;
+	padding:0px!important;
+	margin:0px!important;
+	list-style: none;
+	position: relative;/*リストの項目の位置を基準に*/
+	padding-left: 2.0em!important; /*li:before分左に余白を。調整可*/
+	margin-bottom:5px!important;
+	}
+.checklist_last ol li b{
+	color:#ff0000!important;
+	font-weight:bold!important;
+	}
+.checklist_last ol li:first-child{
+	text-decoration: underline;
+	}
+.checklist_last ol li:before {
+	counter-increment: li;
+	content: counter(li);
+	margin-right: 1em;
+	background: #ff4444; /*薄いピンク*/
+	border: 1px solid #ff4444; /*濃いピンク*/
+	color: #ffffff; /*白*/
+	border-radius: 50%; /*丸く*/
+	text-align: center; /*端に寄ってる数字を真ん中に*/
+	width: 1.3em; /*幅を決めるheightと同じ数値に*/
+	height: 1.3em; /*高さ。widthと同じ数値に。数値変更した場合はline-heightで調整を*/
+	position: absolute; /*リストの基準から移動させる*/
+	left: 0em; /*項目の基準、左にあわせる*/
+	top: 2px; /*基準の上から2pxの位置に表示。テーマによって位置がずれる場合は修正を*/
+	line-height: 1.4;/*数字の位置あわせで数値を指定*/
+	}

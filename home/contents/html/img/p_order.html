@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>ご注文の操作手順 | オリコメイト</title>
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta name="author" content="アット折込" />
+<link rel="shortcut icon" href="/user_data/packages/prototype/img/common/favicon.ico" />
+<link rel="icon" type="image/vnd.microsoft.icon" href="/user_data/packages/prototype/img/common/favicon.ico" />
+
+<link rel="stylesheet" href="/user_data/packages/prototype/css/import.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/style_outline.css" type="text/css" media="all">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="/rss/" />
+
+
+<script src="./js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="/js/eccube.js"></script>
+<script type="text/javascript" src="/js/jquery.colorbox/jquery.colorbox-min.js"></script>
+
+<script type="text/javascript" src="/user_data/packages/prototype/js/login-widget.js"></script>
+
+
+<script type="text/javascript" src="./js/smoothScrollEx.js"></script>
+
+
+<script>
+	$(function($) {
+		var tab = $('.fixed_menu'),
+		offset = tab.offset();
+
+	$(window).scroll(function () {
+		if($(window).scrollTop() > offset.top) {
+			tab.addClass('fixed');
+		} else {
+			tab.removeClass('fixed');
+		}
+	});
+});
+</script>
+
+
+<script>
+$(function(){
+
+  $('.accordion h2').click(function(){
+    if($(this).next('ul').is(':visible')) { //既に開いている場所なら
+      $(this).next('ul').slideUp(300); //閉じる
+    } else { //閉じている場所なら
+      $('.accordion ul').slideUp(); //全部閉じる
+      $(this).next('ul').slideDown(300); //開く
+    }
+  });
+
+
+
+    var pageTop = $('.btn_to_top');
+    pageTop.hide();
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 600) {
+            pageTop.fadeIn();
+        } else {
+            pageTop.fadeOut();
+        }
+    });
+
+});
+</script>
+
+
+</head>
+
+<!-- ▼BODY部 スタート -->
+
+<body>
+<a id="top"></a>
+<div class="header-line"></div>
+
+<div class="contents">
+
+    <!-- ▼【ヘッダー】ログイン -->
+<div class="header">
+<h1 title="初めての方 | 新聞折込・折込チラシの通販【オリコメイト】">ご注文の操作手順 | 新聞折込・折込チラシの通販【オリコメイト】</h1>
+    <div class="logo-image">
+        <h2 title="新聞折込・折込チラシの通販サイト【オリコメイト】"><a href="/">新聞折込・折込チラシの通販サイト【オリコメイト】</a></h2>
+    </div>
+    <div class="left-contents">
+        <div class="header-title">
+新聞折込なら新聞折込通販サイトのオリコメイトにお任せください！
+        </div>
+        <div class="header-navi">
+            <a href="/contents/detail.html" class="border_l navi-new_current">初めての方</a>
+            <a href="/contents/whatis01.html" class="navi-service">新聞折込って？</a>
+            <a href="/orikomi_area/tokyo/chiyoda.html" class="navi-area">対応エリア</a>
+            <a href="/user_data/deadline.php" class="navi-support">締切スケジュール</a>
+            <a href="/contents/qa.html" class="navi-agent navi-last">サポートＱ＆Ａ</a>
+        </div>
+    </div>
+    <div class="right-contents">
+        <div class="header-link">
+            <a href="/mypage/login.php" class="navi-myoriko">会員ログイン</a>
+        </div>
+        <div class="header-info">
+            <a href="/entry/kiyaku.php" class="navi-regist">新規会員登録はこちら</a>
+        </div>
+    </div>
+</div>
+<!-- ▲【ヘッダー】ログイン -->
+<!-- ▼【ヘッダー】スマホサイト表示ボタン -->
+<div class="sp_link_button_area">
+    <a href="/contents/sp/p_other.html">スマートフォン版サイトを表示する</a>
+</div>
+<!-- ▲【ヘッダー】スマホサイト表示ボタン -->
+</div>
+
+<div class="header-bottom-line"></div>
+
+<div class="contents">
+<div class="inner-contents">
+<!-- ▼サイドバー -->
+<div class="sidebar">
+  <div id="dummy_box"></div>
+
+  <div class="fixed_menu">
+  	<!-- ▼ログイン -->
+  	<div id="login_widget" data-guidetext="初めての方"></div>
+  	<!-- ▲ログイン -->
+
+<ul class="accordion">
+    <li>
+        <h2><span>ご登録</span></h2>
+        <ul>
+            <li><a href="p_touroku.html#detail0010">ご登録について</a></li>
+        </ul>
+    </li>
+    <li>
+        <h2><span>ご注文ガイド</span></h2>
+        <ul style="display: block;">
+            <li><a href="#detail0020">ご注文の操作手順</a></li>
+            <li><a href="#detail0030">ご注文から折込までの流れ</a></li>
+            <li><a href="#detail0040">イメージ入稿について</a></li>
+            <li><a href="#detail0050">チラシ納入先倉庫</a></li>
+        </ul>
+    </li>
+    <li>
+        <h2><span>お支払い</span></h2>
+        <ul>
+	<li><a href="p_pay.html#detail0060">お支払い方法について</a></li>
+	<li><a href="p_pay.html#detail0070">お見積書・ご請求書・領収書について</a></li>
+        </ul>
+    </li>
+    <li>
+        <h2><span>データ入稿ガイド</span></h2>
+        <ul>
+          <li><a href="p_howtodata.html#detail0080">データ入稿の方法と注意点</a></li>
+          <li><a href="p_howtodata.html#detail0090">データ圧縮の方法</a></li>
+          <li><a href="p_howtodata.html#detail0100">テンプレート</a></li>
+          <li><a href="p_howtodata.html#detail0110">印刷予備送付について</a></li>
+        </ul>
+    </li>
+    <li>
+        <h2><span>変更・キャンセル</span></h2>
+        <ul>
+          <li><a href="p_change.html#detail0120">増刷注文（有料）について</a></li>
+          <li><a href="p_change.html#detail0130">キャンセル・変更について</a></li>
+        </ul>
+    </li>
+    <li>
+        <h2><span>その他</span></h2>
+        <ul>
+          <li><a href="p_other.html#detail0180">広告基準審査</a></li>
+        </ul>
+    </li>
+
+
+</ul>
+
+
+
+  </div>
+</div>
+<!-- ▲サイドバー -->
+
+
+
+
+<!-- ▼メイン -->
+<div class="entry">
+
+     <div id="outline">
+     <div class="outline_entery">
+
+                <div class="breadcrumbs">
+                    <a href="/">オリコメイトホーム</a> &gt;
+                        <a href="/contents/detail.html">初めての方</a> &gt;
+                        ご注文の操作手順
+                </div>
+
+
+        <h3>ご注文の操作手順</h3>
+        <span id="detail0020">detail0020</span>
+        <h4>当サイトでご注文にあたっての操作手順について</h4>
+        <h6>【STEP1 新聞折込配布エリアを開く】</h6>
+
+         <p><img src="img/entry/order01.jpg" align="left" style="margin-right:10px;">ホームページ左にある「新聞折込配布エリア」から<br>ご希望の都道府県をクリックして下さい。</p>
+<br clear="both">
+
+        <h6>【STEP2 市区町村・新聞銘柄・枚数・その他仕様を選択】</h6>
+
+            <p><img src="img/entry/order02.jpg"><br />
+仕様・新聞銘柄・紙の種類や部数を変更できます。<br />
+            お求めの商品がございましたら価格をクリックしてください。</p>
+<img src="img/entry/order03.jpg"><br>
+
+        <h6>【STEP3 配布エリアを指定】</h6>
+
+            <p><img src="img/entry/order04.jpg"></p>
+
+地図上のアイコンをドラッグすることで、配布する範囲や重視するポイントをご指定できます。<br>
+<img src="img/entry/order05.jpg">
+<br clear="both">
+
+
+
+        <h6>【STEP4 ご注文内容を確認】</h6>
+            <p>
+<img src="img/entry/order06.jpg" align="left" style="margin-right:10px;">内容に誤りがある場合は、画面下部の「もどる」ボタンから選択しなおしてください。<br />
+                ※ブラウザの「戻る」ボタンは使用しないでください。</p>
+<br clear="both">
+
+        <h6>【STEP5 ログインして発注に進む】</h6>
+            <p>STEP3の配送エリアを指定した後、「ご購入の方はコチラ」ボタンを押してください。<br>
+ログインされていない場合次の画面が表示されます。<br>
+</p>
+
+            <p>A：会員登録が既にお済みのお客様は、登録時に発行されたIDとパスワードを入力します。<br />
+入力完了しましたら、次の画面（内容入力画面）をクリックしてください。<br>
+
+            B：会員登録が未だお済みでないお客様は、会員登録画面にお進みいただき、その後次の画面（内容入力画面）へ
+
+
+
+
+</p>
+
+
+
+
+        <h6>【STEP6 商品情報の入力】</h6>
+            <p>＜チラシ情報＞<br />
+            チラシの内容・業種、紙面タイトルをお知らせください。</p>
+
+<img src="img/entry/order07.jpg" align="left" style="margin-right:10px;">
+
+
+            <p>＜広告内容事前審査＞<br />
+            法律や条例に則り、広告内容の審査を申し込むことができます。<br />
+            ご希望の方は審査依頼をお申し付けください。</p>
+
+
+            <p>広告内容事前審査については<a href="p_other.html#detail0180" title="広告基準審査">コチラ</a>をご覧ください</p>
+
+            <p>＜入稿データについて＞※印刷+折込をご希望の方のみ<br />
+            データ作成に使用したアプリケーションとOSをお知らせください。<br />
+            不明な場合はデザイン作成者様にお問合せくださいませ。</p>
+
+
+            <p>入稿データについては<a href="p_howtodata.html#detail0080" title="データ入稿の方法と注意点">コチラ</a>もご覧ください</p>
+
+<br clear="both">
+            <p>＜折込日を決める＞
+            ご希望の折込日をご指定ください。<br />
+            「ゆったり配布」をお選びいただくと割引対象となります。</p>
+
+
+            <p>ゆったり配布については<a href="qa.html#answer2">コチラ</a>もご覧ください</p>
+
+            <p>＜増刷注文＞※印刷+折込をご希望の方のみ<br />
+            無料でお届けする印刷予備（約50部）以外で、別途必要な方はご希望の枚数をご指定ください（有料）。</p>
+
+
+            <p>増刷注文については<a href="p_change.html#detail0120" title="増刷注文">コチラ</a>もご覧ください</p>
+
+            <p>＜備考＞<br />
+            その他、気になる点やご要望等あればご自由に入力ください。<br />
+            ※ ご希望に添えない場合もございます。<br />
+            <a href="/contents/qa.html" title="よくある質問Q＆A">よくある質問Q＆A</a></p>
+
+<img src="img/entry/order08.jpg"><br>
+
+            <p>ご入力が終わりましたら、次へお進みください。</p>
+
+        <h6>【STEP7 ご登録者情報の確認】</h6>
+            <p>＜ご登録者情報、住所・連絡先＞</p>
+<img src="img/entry/order09.jpg" align="left" style="margin-right:10px;">
+<p>ご登録者様の情報にお間違いがないかご確認ください。<br />
+            変更がございましたらマイページより変更・更新をお願いいたします。</p>
+
+
+            <p>＜印刷予備の差出人とお届け先＞※印刷+折込をご希望の方のみ<br />
+            チラシ印刷予備のお届けに必要な情報をご選択ください。<br />
+            増刷を注文された場合は、複数の住所へお届け可能です。<br clear="both"></p>
+
+<img src="img/entry/order10.jpg"><br>
+
+
+            <p>印刷予備・増刷注文については<a href="p_howtodata.html#detail0110" title="印刷予備・増刷注文の送付について">コチラ</a>もご覧ください<br>
+ご確認・ご入力が終わりましたら、次へお進みください。</p>
+
+        <h6>【STEP8 決済方法】</h6>
+            <p><img src="img/entry/order11.jpg" align="left" style="margin-right:10px;">
+クレジットカード・銀行振込からお選びできます。<br />
+            ご選択し、次へお進みください。</p>
+
+            <p>詳しくは、<a href="p_pay.html#detail0060" title="お支払い方法にについて">お支払い方法のページ</a>をご覧ください<br />
+            お見積書・ご請求書・領収書については<a href="p_pay.html#detail0070" title="お見積書・ご請求書・領収書について">コチラ</a>をご覧ください</p>
+	<br clear="both">
+
+        <h6>【STEP9 ご注文内容の確認】</h6>
+            <p>＜ご注文内容のご確認＞<br />
+<img src="img/entry/order12.jpg" align="left" style="margin-right:10px;">
+            チラシタイトル・折込地域・枚数など、ご注文内容に誤りがないか、ご確認をお願いします。</p>
+
+
+            <p>＜お客様情報のご確認＞<br />
+            お客様の住所・連絡先、印刷予備（印刷+折込をご注文の方）のお届け先・差出人の情報に誤りがないか、ご確認をお願いします。</p>
+
+		<br clear="both">
+            <p>＜ご注文内容の修正＞<br>
+            ページ内の「戻る」ボタンより内容を修正できます。</p>
+
+            <p>現在のご注文を進める場合は、ご利用規約をお読みいただき「同意して注文する」のボタンを押してください。
+<br>
+<img src="img/entry/order13.jpg">
+</p>
+
+        <h6>【STEP10 お支払い】</h6>
+            <p>＜クレジットカード決済＞<br />
+            クレジットカードをご用意いただき、必要事項のご入力をお願いします。<br />
+            クレジット決済が完了すると、ご注文受付完了です。</p>
+
+
+            <p>＜銀行振込＞<br />
+            ご注文後の自動配信メールをご確認の上、お振込ください。</p>
+
+
+            <p>各種お支払いについては、<a href="p_pay.html#detail0060" title="お支払い方法について">「お支払い方法について」</a>もご確認ください。</p>
+
+            <p>決済が終わりますと、ご注文完了です。<br />
+<img src="img/entry/order14.jpg"><br>
+            ご注文完了後、チラシ納入、イメージ入稿または、データ入稿をお願い致します。</p>
+
+            <p>チラシ納入方法は<a href="#detail0050" title="チラシ納入先倉庫">コチラ</a><br />
+            イメージ入稿については<a href="#detail0040" title="イメージ入稿について">コチラ</a><br />
+            データ入稿ガイドは<a href="p_howtodata.html#detail0080" title="データ入稿ガイド">コチラ</a></p>
+
+
+
+
+
+
+
+
+
+
+        <span id="detail0030">detail0030</span>
+        <h4>ご注文から折込までの流れ</h4>
+            <h6>【STEP1 新規会員登録】</h6>
+        <p>
+            新規会員登録はお済みでしょうか？<br />
+            まずは新規会員登録をしていただき、ID・パスワードをご取得ください。<br />
+            会員様へは、購入時のオプション選択で料金がお得になるサービスをご用意しております！</p>
+
+
+            <p>新規会員登録後、自動配信メールにて登録完了の通知をいたします。</p>
+
+            <h6>【STEP2 WEBサイトよりご注文】</h6>
+            <p>
+            商品の中からご希望の商品を選択し、価格表より価格をクリックしてください。<br />
+            次のページで、折込エリアを選定して、ID・パスワードをご入力後、注文フォームより必要事項をご入力ください。</p>
+
+
+            <p>ご注文後、自動配信メールにて「ご注文内容のご確認」の通知をいたします。</p>
+
+            <h6>【STEP3 ご決済】</h6>
+            <p>・クレジットカード決済
+            ・銀行振込<br />
+            から、お選びいただけます。<br />
+            ご決済完了後、作業を開始いたします。</p>
+
+
+            <p>詳しくは、<a href="p_pay.html#detail0060" title="お支払い方法にについて">お支払い方法のページ</a>をご覧くださいませ。</p>
+
+            <h6>【STEP4 チラシ納品/データ入稿】</h6>
+
+            <p>＜折込のみの方＞<br />
+            指定倉庫へチラシを納入ください。<br />
+            チラシは、指定倉庫へチラシ納入締切日の15時までに納入していただきます。<br />
+            指定倉庫やチラシ納入締切日については、ご注文後の自動配信メールにてお知らせいたします。</p>
+
+
+            <p>※納入が遅れますと、ご指定頂いた折込日に実施できない可能性があります。</p>
+
+            <p>各締切日については<a href="/user_data/deadline.php" title="締切スケジュールページ">こちらのページ</a>も併せてご覧くださいませ。<br />
+            チラシ納入先倉庫一覧は<a href="#detail0050" title="チラシ納入先倉庫">コチラ</a></p>
+
+            <p>＜印刷+折込の方＞<br />
+            1）データをご入稿ください。<br />
+            マイページ入稿いただく場合、1回のアップロードの最大データ容量は１GBまでとさせていただきます。</p>
+
+
+            <p>
+
+<br>※複数回に分けてのご入稿はいただけません。必要なデータをすべて１つのフォルダに入れ、フォルダごと圧縮いただきますと１つの圧縮ファイルになりますので、圧縮ファイルをご入稿ください。<br>（詳しくは”<a href="#detail0090">データ圧縮の方法</a>”）<br>
+※ご利用の回線により最大送信ファイルサイズは異なりますが、当社システムでは1つのファイルサイズが１GBまでの受信が可能です。お客様が利用する回線により、データ転送速度は大きく異なります。転送が1分以内に完了しない場合は、データを軽くしていただくか、別の入稿方法をお選びください。<br />
+            <br />
+            データは、ご入稿締切日の24時までに入稿していただきます。<br />
+            <br />
+            ※データ入稿が遅れますと、ご指定頂いた折込日に実施できない可能性があります。<br />
+            <br />
+            入稿については<a href="#detail0080" title="データ入稿ガイド">こちらのページ</a>もご覧下さい<br />
+            各締切日については<a href="/user_data/deadline.php" title="締切スケジュール">こちらのページ</a>もご覧ください</p>
+
+            <p>2）データチェック<br />
+            ご入稿いただいたデータに不備がないか弊社で確認いたします。</p>
+
+
+            <p>※データチェックとは、データが印刷可能であるかを確認するものです。よって、デザイン・文字やレイアウト・画質・オーバープリントによる色など、内容に関するものは対象外となります。<br />
+            ご入稿データに不備があった場合は、メールにて「再入稿依頼」の通知をいたします。</p>
+
+            <p>3）印刷<br />
+            オフセット印刷の場合は、印刷用プレートに刷版を行い、オフセット印刷機にて印刷作業を行います。<br />
+            オンデマンド印刷の場合は、オンデマンド機にデータを送り印刷作業を行います。</p>
+
+
+            <p>ご注文枚数によって、安価な印刷方法を弊社にて選びます。</p>
+
+
+            <p>4）印刷予備（無料/約50部）・増刷注文（有料）<br />
+            印刷完了後、印刷予備（約50部）をお届けいたします。<br />
+            印刷予備（約50部）以外にも必要な場合は、有料にて増刷いたします。</p>
+
+
+            <p>※増刷注文については、商品情報入力ページよりご希望枚数をご指定ください。</p>
+
+            <p>印刷予備・増刷注文については<a href="p_howtodata.html#detail0110" title="印刷予備・増刷注文の送付について">コチラ</a>もご覧ください</p>
+
+           <h6>【STEP5 新聞折込を手配】</h6>
+            <p>弊社にてチラシ現物を確認し、問題がないことを確認した後、ご指定いただいた地域へ新聞折込の手配をします。</p>
+
+
+
+           <h6>【STEP6 完了報告】</h6>
+            <p>新聞折込の手配完了です。<br />
+            メールにて、全ての手配が完了したことを、ご報告させていただきます。</p>
+
+
+
+        <span id="detail0040">detail0040</span>
+        <h4>イメージ入稿について</h4>
+            <p>「新聞折込のみ」をご注文のお客様には、チラシイメージのご入稿（ご提出）をお願い致しております。<br />
+            ・当社に納入していただいたチラシを、他のご注文のチラシと区別する目的で「携帯で撮影したチラシの写真や、デザイン制作時のカンプ、PDF」をチラシイメージとしてご提出いただいているものです。<br />
+            ・チラシイメージは、ご注文後マイページからご入稿いただくか、FAXにてご提出ください。</p>
+
+            <p><b>【マイページからのご入稿方法】</b>
+            ・チラシ全体（両面）が判るよう、なるべく鮮明なチラシイメージをご用意ください。</p>
+            <h6>【STEP1 表面と裏面が別々のファイルの場合は圧縮して1つのファイルにまとめます】</h6>
+            <p>チラシが片面刷りの場合は、圧縮不要です。
+            </p>
+	<h6>【STEP2 マイページにログインします】</h6>
+<img src="img/entry/datanyuko_01.jpg">
+
+<h6>【STEP3 イメージ入稿の「入稿」をクリックし入稿ダイアログを開きます】</h6>
+<img src="img/entry/imagenyuko02.jpg">
+
+<h6>【STEP4 入稿ダイアログの「ファイルを選択」をクリックし、お送りいただくイメージファイルを選択します】</h6>
+<img src="img/entry/imagenyuko03.jpg">
+
+
+<h6>【STEP5「upload」をクリックし、完了したらダイアログを閉じてください】</h6>
+<img src="img/entry/datanyuko_04.jpg"><br />
+<img src="img/entry/datanyuko_05.jpg">
+            <br />
+
+            <p><b>【FAXでのご提出方法】</b><br />
+            ・チラシ全体（両面）が判るようFAXに通らない大きさの場合は一度、縮小コピーするなどしてお送りください。<br />
+            ・FAX送付状に、「ご注文番号」「送信日」「ご注文者様氏名」「お電話番号」を記入いただき、チラシイメージを送信下さい。<br />
+            ※チラシイメージ自体にご注文番号をご記入いただいてもFAXでは判別できない為、必ず送付状をつけてください。<br />
+            FAX番号：045-971-7654
+            </p>
+
+
+
+        <span id="detail0050">detail0050</span>
+        <h4>チラシ納入先倉庫</h4>
+            <p>
+                チラシ納入先（指定倉庫）は、新聞折り込みを実施する都道府県（または市区）によって異なります。<br>
+ご注文後、マイページよりチラシ納入先をご確認ください。<br />
+                <br />
+                ※チラシ納入は、本サイトでのご注文後にお願い致します。ご注文前の納入は受注とチラシの照合ができない為、ご遠慮ください。<br />
+                ※宅配便や運送会社での納入も可能です。<br />
+                ※ご注文後の自動配信メールでも指定倉庫の案内をしております。<br />
+                ※チラシは納入締切日の17時までに納入ください。<br />
+                ※納入が遅れますと、ご指定頂いた折込日に実施できない可能性がございます。<br />
+                ※お客様が、直接指定倉庫まで納入いただく場合は、必ず「アット折込」扱いとして、お持込いただき、「注文番号」を添えて納入ください。<br />
+                ※チラシの納入にかかる送料は、お客様のご負担となります。ご了承ください。
+            </p>
+
+            <h6>アット折込 横浜</h6>
+            <p>〒227-0051<br />
+            神奈川県横浜市青葉区千草台43-5<br />
+            新聞折込取扱い地域：神奈川県</p>
+<!--            <img src="img/outline/dummy_map.jpg" /> -->
+
+            <h6>アット折込 埼玉</h6>
+            <p>〒352-0011<br />
+            埼玉県新座市野火止1-12-56 西武運輸倉庫 内<br />
+            新聞折込取扱い地域：東京都、埼玉県</p>
+<!--            <img src="img/outline/dummy_map.jpg" /> -->
+
+            <h6>アット折込 ビッグデポ千葉</h6>
+            <p>〒277-0872<br />
+            千葉県柏市十余二380-15 オリコミＰＲ 内<br />
+            新聞折込取扱い地域：千葉県</p>
+<!--            <img src="img/outline/dummy_map.jpg" /> -->
+
+            <h6>アット折込 茨城</h6>
+            <p>〒300-0066<br />
+            茨城県土浦市虫掛3678 朝日オリコミ茨城 内<br />
+            新聞折込取扱い地域：茨城県</p>
+<!--            <img src="img/outline/dummy_map.jpg" /> -->
+
+            <h6>アット折込 栃木</h6>
+            <p>〒321-0901<br />
+            栃木県宇都宮市平出町3734-4 栃木オリコミセンター 内<br />
+            新聞折込取扱い地域：栃木県</p>
+<!--            <img src="img/outline/dummy_map.jpg" /> -->
+
+            <h6>アット折込 群馬</h6>
+            <p>〒370-0033<br />
+            群馬県高崎市中大類町120-4 群馬総合輸送 内<br />
+            新聞折込取扱い地域：群馬県</p>
+<!--            <img src="img/outline/dummy_map.jpg" /> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="btn_to_top"><a href="#top" title="TOPへ">このページの先頭へ</a></div>
+
+
+
+    </div>
+    </div><!-- end of #outline -->
+
+  </div>
+  <!-- ▲メイン -->
+
+  </div>
+
+  <div id="footer">
+
+<div class="footer-content">
+<div id="sslimg">
+<span id="ss_img_wrapper_115-55_image_ja">
+		<img alt="SSL Certificate" border="0" id="ss_img" src="http://seal.alphassl.com/SiteSeal/images/alpha_noscript_115-55_ja.gif">
+		</span>	<script type="text/javascript" src="//seal.alphassl.com/SiteSeal/alpha_image_115-55_ja.js" defer="defer"></script>
+</div>
+          <div class="footer-links">
+  			<a href="/contents/profile.html">会社概要</a>
+  			<a href="/contents/privacy.html">個人情報の取り扱いについて</a>
+  			<a href="/contents/notation.html">特定商取引法にもとづく表記</a>
+  			<a href="/contents/terms.html">ご利用規約</a>
+  			<a href="/contents/disaster.html">大規模災害時について</a>
+          </div>
+          <div class="footer-copyright">
+              Copyright (C)＠orikomi, All Rights Reserved.
+          </div>
+      </div>
+  </div>
+
+
+  </div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-63340630-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  </body><!-- ▲BODY部 エンド -->
+
+  </html>

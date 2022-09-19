@@ -1,0 +1,1275 @@
+
+.inner-contents .entry {
+	margin-bottom:80px;
+	}
+
+img.maintitleimage{
+	width:100%;
+	display:block;
+	}
+.contentinnertitle p{
+	padding:0 0px 0 15px;
+	}
+.contentinner{
+	padding-top:10px;
+	padding-bottom:5px;
+	background-color:#fbfbfb;
+	margin-bottom:10px;
+	}
+.contentinner a,.contentinnertitle a{
+	color:#0066aa;
+	}
+.contentinner a:hover,.contentinnertitle a:hover{
+	color:#eb5505;
+	}
+
+.contentinner img.subtitleimage{
+	margin-left:10px;
+	display:block;
+	}
+.contentinner img.subimage{
+	display:block;
+	width:820px;
+	margin-left:10px;
+	}
+.contentinner p{
+	padding:0 0px 0 15px;
+	margin-bottom:5px!important;
+	}
+img.subtitleimagelineup{
+	margin-bottom:0px!important;
+	}
+.contentinnerlineup{
+	margin-left:0px;
+	margin-bottom:10px;
+	width:840px;
+	font-size:13px;
+	border-top:solid 3px #e45b32;
+	}
+.contentinnerlineup p{
+	font-size:13px!important;
+	line-height:1.7em!important;
+	width:836px;
+	padding:5px 0px 0px 0px;
+	color:#000;
+	background-color:#fff;
+	margin-bottom:2px!important;
+	}
+.contentinnerlineup ul{
+	margin:0;
+	padding:0;
+	font-size:0px;
+	}
+.contentinner ul.point{
+	width:100%;
+	margin:0;
+	padding:0;
+	font-size:0px;
+	}
+.contentinner ul.point li.pointlist{
+	width:500px;
+	margin:0;
+	padding:0;
+	padding-left:23px;
+	margin-left:15px;
+	line-height:1.8em;
+	display:block;
+	font-size:16px;
+	background-image: url('//www.orikomate.jp/contents/img/design/nat1_ico_05.png');
+	background-repeat: no-repeat;
+	background-position:0px 2px;
+	}
+
+.contentinnerlineup ul li.lineup01{
+	position:relative;
+	width:278px;
+	font-size:12px;
+	margin:0;
+	padding:0;
+	background-image: url('//www.orikomate.jp/contents/img/design/tirasi_lineup01.png');
+	background-repeat: no-repeat;
+	height:88px;
+	display:inline-block;
+	}
+.contentinnerlineup ul li.lineup02{
+	position:relative;
+	width:278px;
+	font-size:12px;
+	margin:0;
+	padding:0;
+	background-image: url('//www.orikomate.jp/contents/img/design/tirasi_lineup02.png');
+	background-repeat: no-repeat;
+	height:88px;
+	display:inline-block;
+	}
+.contentinnerlineup ul li.lineup03{
+	position:relative;
+	width:278px;
+	font-size:12px;
+	margin:0;
+	padding:0;
+	background-image: url('//www.orikomate.jp/contents/img/design/tirasi_lineup03.png');
+	background-repeat: no-repeat;
+	height:88px;
+	display:inline-block;
+	}
+
+table.imagetable,table.imagetable tr td{
+	vertical-align: top;
+	padding:0;
+	margin:0;
+	border: 0px solid #ccc;
+	}
+
+.contentinner ul.point2{
+	width:360px;
+	margin:0;
+	padding:0;
+	font-size:0px;
+	}
+.contentinner ul.point2 li.pointlist{
+	font-weight:bold;
+	width:320px;
+	margin:0;
+	padding:0;
+	padding-left:23px;
+	margin-left:15px;
+	line-height:1.8em;
+	display:block;
+	font-size:16px;
+	background-image: url('//www.orikomate.jp/contents/img/design/nat1_ico_05.png');
+	background-repeat: no-repeat;
+	background-position:0px 2px;
+	}
+.contentinner ul.point2 li.pointlist p{
+	padding-left:0px;
+	line-height:1.5em!important;
+	}
+.contentinner ul.point3{
+	width:100%;
+	margin:0;
+	padding:0;
+	font-size:0px;
+	}
+.contentinner ul.point3 li.pointlist{
+	font-weight:bold;
+	width:790px;
+	margin:0;
+	padding:0;
+	padding-left:23px;
+	margin-left:15px;
+	line-height:1.8em;
+	display:block;
+	font-size:16px;
+	background-image: url('//www.orikomate.jp/contents/img/design/nat1_ico_05.png');
+	background-repeat: no-repeat;
+	background-position:0px 2px;
+	}
+.contentinner ul.point3 li.pointlist p{
+	padding-left:0px;
+	line-height:1.5em!important;
+	}
+
+
+.contentinner ul.point4{
+	width:470px;
+	margin:0;
+	padding:0;
+	font-size:0px;
+	}
+.contentinner ul.point4 li.pointlist1{
+	font-weight:bold;
+	width:410px;
+	margin:0;
+	padding:0;
+	padding-left:40px;
+	margin-left:15px;
+	line-height:1.8em;
+	display:block;
+	font-size:16px;
+	background-image: url('//www.orikomate.jp/contents/img/design/no1.png');
+	background-repeat: no-repeat;
+	background-position:0px 2px;
+	}
+.contentinner ul.point4 li.pointlist2{
+	font-weight:bold;
+	width:410px;
+	margin:0;
+	padding:0;
+	padding-left:40px;
+	margin-left:15px;
+	line-height:1.8em;
+	display:block;
+	font-size:16px;
+	background-image: url('//www.orikomate.jp/contents/img/design/no2.png');
+	background-repeat: no-repeat;
+	background-position:0px 2px;
+	}
+.contentinner ul.point4 li.pointlist3{
+	font-weight:bold;
+	width:410px;
+	margin:0;
+	padding:0;
+	padding-left:40px;
+	margin-left:15px;
+	line-height:1.8em;
+	display:block;
+	font-size:16px;
+	background-image: url('//www.orikomate.jp/contents/img/design/no3.png');
+	background-repeat: no-repeat;
+	background-position:0px 2px;
+	}
+.contentinner ul.point4 li.pointlist4{
+	font-weight:bold;
+	width:410px;
+	margin:0;
+	padding:0;
+	padding-left:40px;
+	margin-left:15px;
+	line-height:1.8em;
+	display:block;
+	font-size:16px;
+	background-image: url('//www.orikomate.jp/contents/img/design/no4.png');
+	background-repeat: no-repeat;
+	background-position:0px 2px;
+	}
+.contentinner ul.point4 li.pointlist1 p{
+	padding-left:0px;
+	line-height:1.5em!important;
+	}
+.contentinner ul.point4 li.pointlist2 p{
+	padding-left:0px;
+	line-height:1.5em!important;
+	}
+.contentinner ul.point4 li.pointlist3 p{
+	padding-left:0px;
+	line-height:1.5em!important;
+	}
+.contentinner ul.point4 li.pointlist4 p{
+	padding-left:0px;
+	line-height:1.5em!important;
+	}
+
+
+.contentinnerlineup dt.lineup_dt01{
+	position:absolute;
+	top:30px;
+	left:95px;
+	margin:0;
+	padding:0;
+	font-size:20px;
+	font-weight:bold;
+	color:#3c3c32;
+	}
+.contentinnerlineup dd.lineup_dd01{
+	position:absolute;
+	top:58px;
+	left:95px;
+	font-size:14px;
+	font-weight:bold;
+	color:#105900;
+	}
+
+.contentinnerlineup dt.lineup_dt02{
+	position:absolute;
+	top:30px;
+	left:95px;
+	margin:0;
+	padding:0;
+	font-size:20px;
+	font-weight:bold;
+	color:#404036;
+	}
+.contentinnerlineup dd.lineup_dd02{
+	position:absolute;
+	top:10px;
+	right:10px;
+	font-size:13px;
+	color:#404036;
+	font-weight:bold;
+	}
+.contentinnerlineup dd.lineup_dd12{
+	position:absolute;
+	top:58px;
+	left:95px;
+	font-size:14px;
+	font-weight:bold;
+	color:#cc6b0a;
+	}
+.contentinnerlineup dt.lineup_dt03{
+	position:absolute;
+	top:30px;
+	left:95px;
+	margin:0;
+	padding:0;
+	font-size:20px;
+	font-weight:bold;
+	color:#000;
+	}
+.contentinnerlineup dd.lineup_dd03{
+	position:absolute;
+	top:10px;
+	right:10px;
+	font-size:13px;
+	font-weight:bold;
+	color:#404036;
+	}
+.contentinnerlineup dd.lineup_dd13{
+	position:absolute;
+	top:58px;
+	left:95px;
+	font-size:14px;
+	font-weight:bold;
+	color:#1f6183;
+	}
+
+
+.contentinnerh4 h4{
+	margin-bottom:0px!important;
+	}
+.contentinnerh4 p {
+	text-align:left;
+	background-color:#fbfbfb;
+	position: relative;
+
+	padding-top:7px;
+	padding-left:15px;
+	padding-bottom: .5em;
+	border-bottom: 2px solid #ccc;
+	margin-bottom:0px!important;
+	}
+.contentinnerh4 p::after {
+	position: absolute;
+	bottom: -2px;
+	left: 0;
+	z-index: 2;
+	content: '';
+	width: 94%;
+	height: 2px;
+	background-color: #EA5514;
+	}
+.smallfont{
+	display:inline-block;
+	font-size:11px;
+	font-weight:normal;
+	}
+.contentinner h6{
+	margin-right:10px;
+	margin-left:10px;
+	margin-bottom:0px!important;
+	}
+table.softwaretable{
+	width:820px;
+	margin-top:0px;
+	margin-right:10px;
+	margin-left:10px;
+	border: 0px solid #ccc;
+	margin-bottom:5px!important;
+	}
+table.softwaretable tr th{
+	font-size:13px;
+	font-weight:bold;
+	background-color: #fbfbfb;
+	border-right: 0px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	}
+table.softwaretable tr th.softwaretabletitle{
+	width:140px;
+	}
+
+table.softwaretable tr td{
+	font-size:13px;
+	background-color: #fbfbfb;
+	border-right: 0px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	padding-top:0px;
+	padding-bottom:0px!important;
+	}
+
+table.softwaretable tr td{
+	vertical-align:middle;
+	}
+table.softwaretable tr td img{
+	margin-top:10px;
+	}
+table.softwaretable tr td.software_td{
+	font-size:13px;
+	vertical-align:middle;
+	}
+
+table.softwaretable tr td ul{
+	margin:0!important;
+	padding:0!important;
+	margin-top:5px!important;
+	margin-bottom:5px!important;
+	}
+table.softwaretable tr td ul li{
+	display:inline;
+	padding-right:10px;
+	}
+
+
+
+table.utiwatable{
+	width:820px;
+	margin-top:0px;
+	margin-right:10px;
+	margin-left:10px;
+	border: 0px solid #ccc;
+	margin-bottom:5px!important;
+	}
+table.utiwatable tr th{
+	font-size:13px;
+	font-weight:bold;
+	background-color: #fbfbfb;
+	border-right: 0px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	}
+table.utiwatable tr th.utiwatabletitle{
+	width:140px;
+	}
+
+table.utiwatable tr td{
+	font-size:13px;
+	background-color: #fbfbfb;
+	border-right: 0px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	padding-top:0px;
+	padding-bottom:0px!important;
+	}
+
+table.utiwatable tr td{
+	vertical-align:middle;
+	}
+table.utiwatable tr td img{
+	margin-top:10px;
+	}
+table.utiwatable tr td.utiwa_td{
+	font-size:13px;
+	vertical-align:middle;
+	}
+
+table.utiwatable tr td ul{
+	margin:0!important;
+	padding:0!important;
+	margin-top:5px!important;
+	margin-bottom:5px!important;
+	}
+table.utiwatable tr td ul li{
+	width:110px;
+	display:inline-block;
+	padding-right:10px;
+	}
+table.utiwatable tr td ul li.n7{
+	width:60px;
+	display:inline-block;
+	padding-right:10px;
+	}
+table.utiwatable tr td ul li.n8{
+	width:130px;
+	display:inline-block;
+	padding-right:10px;
+	}
+table.utiwatable tr td ul li.n9{
+	width:150px;
+	display:inline-block;
+	padding-right:10px;
+	}
+table.utiwatable tr td ul li.n10{
+	width:80px;
+	display:inline-block;
+	padding-right:10px;
+	}
+table.utiwatable tr td ul li.n10s{
+	width:100px;
+	display:inline-block;
+	padding-right:0px;
+	}
+table.utiwatable tr td ul li.n11{
+	width:120px;
+	display:inline-block;
+	padding-right:5px;
+	}
+table.utiwatable tr td ul li.n12{
+	width:90px;
+	display:inline-block;
+	padding-right:0px;
+	}
+
+
+table.utiwa_td_area{
+	width:100%;
+	}
+
+table.utiwa_td_area tr td:nth-child(odd){
+	vertical-align:top;
+	width:650px;
+	}
+table.utiwa_td_area tr td input.submit_utiwa{
+	border-radius: 5px;        /* CSS3草案 */  
+        -webkit-border-radius: 5px;    /* Safari,Google Chrome用 */
+        -moz-border-radius: 5px;   /* Firefox用 */
+
+	width:120px;
+	height:180px;
+	font-size:18px;
+	background-color: #4285f4;
+	color: #fff;
+	border-style: none;
+	cursor:pointer;
+	}
+table.utiwa_td_area tr td input.submit_utiwa:hover{
+	background-color: #3b78e7;
+	}
+table.utiwa_td_area{
+	width:100%;
+	overflow:hidden;
+	border: 0px solid #ccc;
+	}
+table.utiwa_td_area tr td{
+	overflow:hidden;
+	padding:0;
+	margin:0;
+	border: 0px solid #ccc;
+	}
+
+table.utiwa_td_area tr td label{
+	text-indent:0px;
+	margin:0;
+	padding:0;
+	}
+
+
+table.postingprice{
+	margin-top:-10px;
+	width:820px;
+	margin-right:10px;
+	margin-left:10px;
+	border: 0px solid #ccc;
+	margin-bottom:5px!important;
+	}
+table.postingprice tr th{
+	height:30px;
+	text-align:center;
+	font-size:13px;
+	line-height:1.3em;
+	font-weight:bold;
+	background-color: #fbfbfb;
+	border-right: 0px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	}
+table.postingprice tr td{
+	height:30px;
+	font-size:13px;
+	text-align:center;
+	background-color: #fbfbfb;
+	border-right: 0px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	padding-top:0px;
+	padding-bottom:0px!important;
+	}
+table.postingprice tr td.postingarea{
+	text-align:left;
+	}
+
+
+table.postingprice2{
+	width:820px;
+	margin-top:0px;
+	margin-right:10px;
+	margin-left:10px;
+	border: 0px solid #ccc;
+	margin-bottom:5px!important;
+	}
+table.postingprice2 tr th{
+	height:30px;
+	text-align:left;
+	font-size:13px;
+	line-height:1.3em;
+	font-weight:bold;
+	background-color: #fbfbfb;
+	border-right: 0px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	}
+table.postingprice2 tr th.postingprice2th{
+	width:370px;
+	}
+
+table.postingprice2 tr td{
+	height:30px;
+	font-size:13px;
+	text-align:left;
+	background-color: #fbfbfb;
+	border-right: 0px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	padding-top:0px;
+	padding-bottom:0px!important;
+	}
+
+
+
+
+#lPcontact {
+	position:relative;
+	width:840px;
+	min-height:259px;
+	background-image: url("//www.orikomate.jp/contents/img/lp/contact.jpg");
+	background-size:content;
+}
+	
+
+#lPcontact a {
+	position:absolute;
+	bottom:15px;
+	right:40px;
+	display:block;
+	width:486px;
+	min-height:113px;
+	background-image: url("//orikomate0.labnet.or.jp/contents/img/lp/contact_btn.png");
+}
+
+
+#lPcontact a:hover {
+	background-image: url("//orikomate0.labnet.or.jp/contents/img/lp/contact_btn_ho.png");
+}
+
+.of_h {
+	overflow:hidden!important;
+	text-indent:100%;
+	white-space:nowrap;
+}
+
+.contentinner table#template-dl-list{
+	width:820px;
+	margin-bottom:10px;
+	border: 0px solid #ccc;
+	}
+.contentinner table#template-dl-list th{
+	background-color:#ffe001;
+	border-top: 2px solid #fedf00;
+	border-bottom: 1px solid #fedf00;
+	border-right: 0px solid #e5e5e5;
+	}
+.contentinner table#template-dl-list td{
+	background-color:#fff;
+
+	border-top: 2px solid #fedf00;
+	border-bottom: 2px solid #e5e5e5;
+	border-right: 0px solid #e5e5e5;
+	}
+
+.sidebar-menu{
+	border: solid 4px #eb5e24;
+	text-align: center;
+	width: 250px;
+	padding: 0px 0px 12px 0px;
+	}
+
+p.reach_ratio2{
+	background: url("//www.orikomate.jp/user_data/packages/prototype/img/header/header.png") no-repeat -0px -928px;
+	color: #fff!important;
+	height: 40px;
+	line-height:40px!important;
+
+	text-align: left;
+	vertical-align: middle;
+	font-size: 13px;
+	font-weight:bold!important;
+	padding: 10px 10px 10px 80px;
+	margin-top:20px;
+	margin-bottom:10px!important;
+	}
+.reach_ratio2text{
+	padding:10px 15px 0px 15px;
+	font-size:13px;
+	line-height:1.7em;
+	margin-bottom:0px;
+	margin-top:10px;
+	}
+
+.reach_ratio3text{
+	padding:0px 0px 0px 0px;
+	font-size:13px;
+	line-height:1.7em;
+	margin-bottom:0px;
+	margin-top:10px;
+	background-color:#fff;
+	}
+.reach_ratio3text p{
+	padding-top:4px;
+	border-top: solid 2px #aea9a9;
+	}
+
+.contentinner2{
+	margin-top:20px;
+	margin-bottom:20px;
+	}
+.contentinner2 h2{
+	font-size:24px;
+	color:#3d9bf5;
+	margin-bottom:20px;
+	}
+.contentinner2 h3{
+	font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
+	height:auto!important;
+	padding:0!important;
+	margin:0!important;
+	border:none!important;
+	font-size:36px!important;
+	font-weight:bold!important;
+	text-align:left!important;
+	}
+.contentinner2 p{
+	font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', sans-serif;
+	font-size:24px!important;
+	font-weight:bold!important;
+	}
+.contentinner2 p b{
+	font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
+	font-size:36px;
+	color:#ff0000;
+	font-weight:bold;
+	display:block;
+	}
+.contentinner2left{
+	width:350px;
+	vertical-align: top;
+	display: inline-block;
+	}
+.contentinner2right{
+	width:476px;
+	vertical-align: top;
+	display: inline-block;
+	}
+.botton_link {
+	margin-top:10px;
+	text-align:center;
+	width:300px;
+	height:50px;
+	line-height:50px;
+	display:block;
+	background: -moz-linear-gradient(top,#FFF 0%,#E6E6E6);
+	background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#E6E6E6));
+	background: -ms-linear-gradient(top,#FFF 0%,#E6E6E6);
+	border: 2px solid #DDD;
+	color: #111;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-box-shadow: 1px 1px 1px rgba(000,000,000,0.3);
+	-webkit-box-shadow: 1px 1px 1px rgba(000,000,000,0.3);
+	}
+.botton_link a {
+	font-weight:bold;
+	color:#666;
+	font-size:13px;
+	padding: 10px 0px 10px 15px;
+	background: url("//www.orikomate.jp/user_data/packages/prototype/img/header/header.png") no-repeat -15px -853px;
+	}
+
+table#template-dl-list2{
+	width:840px;
+	margin-bottom:10px;
+	}
+table#template-dl-list2 tr th{
+	font-size:13px;
+	}
+table#template-dl-list2 tr td{
+	font-size:13px;
+	line-height:1.8em;
+	vertical-align: top;
+	}
+table#template-dl-list2 tr td p{
+	border-bottom: 2px solid #DDD;
+	padding:0;
+	margin-bottom:12px;
+	display:block;
+	height:100px;
+	}
+table#template-dl-list2 tr td.list2_imagetitle{
+	text-align:center;
+	line-height:1em;
+	}
+table#template-dl-list2 tr td.list2_imagetitle img{
+	line-height:0em;
+	padding:0;
+	margin:0;
+	}
+table#template-dl-list2 tr td.list2_imagetitle h3{
+	font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
+	height:auto!important;
+	padding:0!important;
+	margin:0!important;
+	border:none!important;
+	font-size:13px!important;
+	font-weight:normal!important;
+	text-align:center!important;
+	}
+
+
+table#template-dl-list2 tr th{
+	text-align:center;
+	background:#02aff4;
+	color:#fff;
+	}
+table#template-dl-list2 tr th.list2_title03{
+	width:200px;
+	}
+table#template-dl-list2 tr th.list2_title04{
+	width:150px;
+	}
+.utiwa_temp{
+	vertical-align: top;
+	display: inline-block;
+	width:390px;
+	}
+.utiwa_temp ul{
+	padding:0;
+	margin:0;
+	}
+.utiwa_temp ul li{
+	display: block;
+	padding:0;
+	margin:0;
+	}
+.utiwa_temp2{
+	vertical-align: top;
+	display: inline-block;
+	width:200px;
+	}
+
+
+.utiwa_template{
+	width:200px;
+	display:block;
+	color:#fff;
+	height:50px;
+	line-height:50px;
+
+	text-align:center;
+    	border-radius:5px;
+    	border:1px solid #364ea5;
+    	background: -moz-linear-gradient(
+    		top,
+    		#5470dc 0%,
+    		#415dcb 100%);
+    	background: -webkit-gradient(
+    		linear, left top, left bottom, 
+    		from(#5470dc),
+    		to(#415dcb));
+    	background:linear-gradient(
+    		top,
+    		#5470dc 0%,
+    		#415dcb 100%);
+	/*IE6 IE7 */
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startcolorstr=#5470dc, endcolorstr=#415dcb));
+	/* IE8 IE9 */
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(GradientType=0,startcolorstr=#5470dc, endcolorstr=#415dcb))";
+	zoom: 1;
+	background: linear-gradient(to bottom, #5470dc, #415dcb);/* IE10+, W3C */
+	}
+
+.utiwa_template:hover{
+	filter:alpha(opacity=90);
+	-moz-opacity: 0.9;
+	opacity: 0.9;
+	}
+
+
+table#template-dl-list3{
+	border:none!important;
+	width:810px;
+	margin-bottom:10px;
+	border-left: 1px solid #fff!important;
+	}
+table#template-dl-list3 tr th{
+	border:none!important;
+	font-size:12px;
+	border-right: 1px solid #fff!important;
+	}
+table#template-dl-list3 tr td{
+	border:none!important;
+	border-bottom: 1px solid #DDD!important;
+
+	text-align:right;
+
+	font-size:13px;
+	line-height:1.8em;
+	vertical-align: top;
+	}
+table#template-dl-list3 tr td p{
+	border-bottom: 2px solid #DDD;
+	padding:0;
+	margin-bottom:12px;
+	display:block;
+	height:100px;
+	}
+table#template-dl-list3 tr td.list2_imagetitle{
+	text-align:center;
+	line-height:1em;
+	}
+table#template-dl-list3 tr td.list2_imagetitle img{
+	line-height:0em;
+	padding:0;
+	margin:0;
+	}
+table#template-dl-list3 tr td.list2_imagetitle h3{
+	font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
+	height:auto!important;
+	padding:0!important;
+	margin:0!important;
+	border:none!important;
+	font-size:13px!important;
+	font-weight:normal!important;
+	text-align:center!important;
+	background:#767676;
+	color:#fff;
+	}
+
+
+table#template-dl-list3 tr th{
+	text-align:center;
+	background:#969696;
+	color:#fff;
+	}
+table#template-dl-list3 tr th.list2_title03{
+	width:200px;
+	}
+table#template-dl-list3 tr th.list2_title04{
+	width:150px;
+	}
+.template-dl-list3_ex{
+	text-align:right;
+	margin-right:10px;
+	margin-bottom:10px;
+	line-height:1.6em;
+	font-size:12px;
+	}
+
+.peratirasi_template{
+	width:200px;
+	display:inline-block!important;
+	color:#fff;
+	height:50px;
+	line-height:50px;
+
+	text-align:center;
+    	border-radius:5px;
+    	border:1px solid #364ea5;
+    	background: -moz-linear-gradient(
+    		top,
+    		#5470dc 0%,
+    		#415dcb 100%);
+    	background: -webkit-gradient(
+    		linear, left top, left bottom, 
+    		from(#5470dc),
+    		to(#415dcb));
+    	background:linear-gradient(
+    		top,
+    		#5470dc 0%,
+    		#415dcb 100%);
+	/*IE6 IE7 */
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startcolorstr=#5470dc, endcolorstr=#415dcb));
+	/* IE8 IE9 */
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(GradientType=0,startcolorstr=#5470dc, endcolorstr=#415dcb))";
+	zoom: 1;
+	background: linear-gradient(to bottom, #5470dc, #415dcb);/* IE10+, W3C */
+	}
+
+.peratirasi_template:hover{
+	filter:alpha(opacity=90);
+	-moz-opacity: 0.9;
+	opacity: 0.9;
+	}
+
+.peratirasi_temp{
+	vertical-align: top;
+	display: inline-block;
+	width:100%;
+	padding-bottom:5px;
+	}
+.peratirasi_temp ul{
+	padding:0;
+	margin:0;
+	margin-top:5px;
+	}
+.peratirasi_temp ul li{
+	display: block;
+	padding:0;
+	margin:0;
+	}
+.peratirasi_temp2{
+	border-top: 2px solid #DDD;
+	padding:0;
+	margin-bottom:12px;
+	display:block;
+	height:80px;
+	line-height:80px;
+
+	vertical-align: top;
+	display: inline-block;
+	width:100%;
+	}
+
+.peratirasi_temp2 ul{
+	padding:0;
+	margin:0;
+	}
+.peratirasi_temp2 ul li{
+	width:50%;
+	display: inline-block;
+	}
+
+.peratirasi_temp2 ul li img{
+	vertical-align: middle;
+	margin-right:10px;
+	}
+
+.peratirasi_template{
+	width:200px;
+	display:block;
+	color:#fff;
+	height:50px;
+	line-height:50px;
+
+	text-align:center;
+    	border-radius:5px;
+    	border:1px solid #364ea5;
+    	background: -moz-linear-gradient(
+    		top,
+    		#5470dc 0%,
+    		#415dcb 100%);
+    	background: -webkit-gradient(
+    		linear, left top, left bottom, 
+    		from(#5470dc),
+    		to(#415dcb));
+    	background:linear-gradient(
+    		top,
+    		#5470dc 0%,
+    		#415dcb 100%);
+	/*IE6 IE7 */
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startcolorstr=#5470dc, endcolorstr=#415dcb));
+	/* IE8 IE9 */
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(GradientType=0,startcolorstr=#5470dc, endcolorstr=#415dcb))";
+	zoom: 1;
+	background: linear-gradient(to bottom, #5470dc, #415dcb);/* IE10+, W3C */
+	}
+
+.peratirasi_template:hover{
+	filter:alpha(opacity=90);
+	-moz-opacity: 0.9;
+	opacity: 0.9;
+	}
+
+
+.template-dl-list2under{
+	margin-bottom:-10px;
+	}
+.template-dl-list2under a{
+	color:#0066aa;
+	}
+.template-dl-list2under a:hover{
+	color:#eb5505;
+	}
+
+.guide_dl{
+	width:100%;
+	margin-bottom:20px;
+    	border:1px solid #eee;
+	position:relative;
+	height:350px;
+    background-image: url(//www.orikomate.jp/contents/img/guide.jpg);
+    background-repeat: no-repeat;
+    background-position: 10px 55px;
+	}
+.guide_dl a{
+	position:absolute;
+	top:150px;
+	right:60px;
+	}
+
+.sinbun_dl{
+	width:100%;
+    	border:1px solid #eee;
+	margin-bottom:20px;
+	}
+.sinbun_dl1{
+	width:100%;
+	position:relative;
+	height:350px;
+    background-image: url(//www.orikomate.jp/contents/img/sinbun_dl_underimg.png);
+    background-repeat: no-repeat;
+    background-position: 10px 55px;
+	}
+.sinbun_dlin{
+	line-height:1.9em;
+	font-size:13px;
+	width:360px;
+	position:absolute;
+	top:60px;
+	right:0px;
+	}
+.sinbun_dl_under{
+	position:relative;
+	background-image: url(//www.orikomate.jp/contents/img/dlimage.jpg);
+	background-repeat: no-repeat;
+	font-size:13px;
+	height:162px;
+	margin-bottom:10px;
+	}
+.sinbun_dl_under a{
+	position:absolute;
+	bottom:10px;
+	left:30px;
+	}
+
+.linkcolor{
+	font-size:13px;
+	margin-bottom:10px;
+	}
+.linkcolor a{
+	color:#0066aa;
+	}
+.linkcolor a:hover{
+	color:#eb5505;
+	}
+
+
+
+
+
+
+
+
+.w_knowledge{
+	margin-bottom:20px;
+	position: relative;
+	background-color: #fff3e6;
+
+	border-radius: 10px;        /* CSS3草案 */  
+	-webkit-border-radius: 10px;    /* Safari,Google Chrome用 */  
+	-moz-border-radius: 10px;   /* Firefox用 */ 
+	}
+.w_knowledge h3{
+	display:block;
+	font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
+	height:auto!important;
+	padding:0!important;
+	margin:0!important;
+	padding-top:10px!important;
+	margin-left:18px!important;
+	border:none!important;
+	font-size:20px!important;
+	font-weight:bold!important;
+	text-align:left!important;
+
+	background-image: url('//www.orikomate.jp/contents/img/title_utiwa.png');
+	background-repeat: no-repeat;
+	background-position:-5px 20px;
+
+	overflow:hidden!important;
+	text-indent:100%;
+	white-space:nowrap;
+	height:80px!important;
+
+	color:#4f4218!important;
+	margin-bottom:15px!important;
+	}
+.w_knowledge p{
+	font-size:13px!important;
+	line-height:2em!important;
+	width:550px;
+	margin-left:20px;
+	padding-bottom:20px;
+	}
+.w_knowledge img{
+	position: absolute;
+	top:10px;
+	right:0px;
+	}
+.contentinner5{
+	border:1px solid #eee;
+	margin-bottom:20px;
+	}
+
+
+.w_knowledge_pera{
+	margin-bottom:20px;
+	position: relative;
+	background-color: #fff3e6;
+
+	border-radius: 10px;        /* CSS3草案 */  
+	-webkit-border-radius: 10px;    /* Safari,Google Chrome用 */  
+	-moz-border-radius: 10px;   /* Firefox用 */ 
+	}
+.w_knowledge_pera h3{
+	display:block;
+	font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
+	height:auto!important;
+	padding:0!important;
+	margin:0!important;
+	padding-top:10px!important;
+	margin-left:18px!important;
+	border:none!important;
+	font-size:20px!important;
+	font-weight:bold!important;
+	text-align:left!important;
+
+	background-image: url('//www.orikomate.jp/contents/img/title_pera.png');
+	background-repeat: no-repeat;
+	background-position:-5px 20px;
+
+	overflow:hidden!important;
+	text-indent:100%;
+	white-space:nowrap;
+	height:80px!important;
+
+	color:#4f4218!important;
+	margin-bottom:15px!important;
+	}
+.w_knowledge_pera p{
+	font-size:13px!important;
+	line-height:2em!important;
+	width:550px;
+	margin-left:20px;
+	padding-bottom:20px;
+	}
+.w_knowledge_pera img{
+	position: absolute;
+	top:10px;
+	right:0px;
+	}
+
+table.td_areain{
+	padding:0;
+	margin:0;
+	width:100%;
+	border:none;
+	}
+table.td_areain tr td{
+	height:30px;
+	line-height:30px;
+
+	width:25%;
+	text-align:left;
+	margin:0;
+	padding:0;
+	vertical-align:baseline;
+	}
+table.td_areain2{
+	padding:0;
+	margin:0;
+	width:100%;
+	border:none;
+	}
+table.td_areain2 tr td{
+	height:30px;
+	line-height:30px;
+
+	width:33%;
+	text-align:left;
+	margin:0;
+	padding:0;
+	vertical-align:baseline;
+	}
+

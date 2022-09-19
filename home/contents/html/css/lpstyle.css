@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+.mb20 {
+	margin-bottom:20px;
+}
+
+.mb50 {
+	margin-bottom:50px;
+}
+
+#lpPage h2,h3 {
+	border-top:none;
+	border-bottom:none;
+	background-color:transparent!important;
+	border:none!important;
+}
+
+#mainmapin h2 {
+	border-top:none;
+	border-bottom:none;
+	background-color:transparent!important;
+	border:none!important;
+}
+
+.lPtitle01 h2 {
+	background-image:url("//www.orikomate.jp/contents/img/lp/title1.jpg");
+	background-repeat: no-repeat;
+	min-height:91px;
+	margin-bottom:20px;
+}
+.lPtitle02{
+	font-size:13px;
+	}
+
+.lPtitle02 h2 {
+	background-image:url("//www.orikomate.jp/contents/img/lp/title2.jpg");
+	background-repeat: no-repeat;
+	min-height:89px;
+	margin-bottom:20px;
+}
+
+.lPtitle03 h2 {
+	background-image:url("//www.orikomate.jp/contents/img/lp/title3.jpg");
+	background-repeat: no-repeat;
+	min-height:92px;
+	margin-bottom:20px;
+}
+
+.lPtitle04 h2 {
+	background-image:url("//www.orikomate.jp/contents/img/lp/title4.jpg");
+	background-repeat: no-repeat;
+	min-height:49px;
+	margin-bottom:20px;
+}
+
+.of_h ul {
+	overflow:hidden!important;
+}
+
+.of_h {
+	overflow:hidden!important;
+	text-indent:100%;
+	white-space:nowrap;
+}
+
+#lPcatch {
+	background-image:url("//www.orikomate.jp/contents/img/lp/catch.jpg");
+	background-repeat: no-repeat;
+	min-height:510px;
+
+}
+
+#lPprocess {
+	background-image:url("//www.orikomate.jp/contents/img/lp/howto.jpg");
+	background-repeat: no-repeat;
+	min-height:401px;
+}
+
+#lPcontact {
+	position:relative;
+	width:840px;
+	min-height:259px;
+	background-image: url("//www.orikomate.jp/contents/img/lp/contact.jpg");
+	background-size:content;
+}
+	
+
+#lPcontact a {
+	position:absolute;
+	bottom:15px;
+	right:40px;
+	display:block;
+	width:486px;
+	min-height:113px;
+	background-image: url("//orikomate0.labnet.or.jp/contents/img/lp/contact_btn.png");
+}
+
+
+#lPcontact a:hover {
+	background-image: url("//orikomate0.labnet.or.jp/contents/img/lp/contact_btn_ho.png");
+}
+
+#lPgraph {
+	background-image:url("//www.orikomate.jp/contents/img/lp/graph.jpg");
+	background-repeat: no-repeat;
+	min-height:419px;
+}
+
+#lPflow {
+	background-image:url("//www.orikomate.jp/contents/img/lp/root.jpg");
+	background-repeat: no-repeat;
+	min-height:419px;
+}
+
+#lPcheckbox {
+	background-image:url("//www.orikomate.jp/contents/img/lp/check_box.jpg");
+	background-repeat: no-repeat;
+	min-height:493px;
+}
+
+#lPqanda{
+	background-image:url("//www.orikomate.jp/contents/img/lp/q_and_a.jpg");
+	background-repeat: no-repeat;
+	min-height:776px;
+}
+
+/* lpmap */
+
+.mainmap2{
+	font-size:0px;
+	line-height:0px;
+	border:0px solid #eb5e24;
+
+	background: #f5f5f5 url("//www.orikomate.jp/contents/img/map.jpg") 0px -576px no-repeat;
+	}
+
