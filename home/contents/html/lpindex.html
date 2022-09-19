@@ -1,0 +1,1512 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<title>初めてチラシを新聞折込される方へ | 新聞折込チラシなら新聞折込の激安通販【オリコメイト】</title>
+<meta name="description" content="新聞折込をするにはチラシ作成料金と新聞折込料金が必要です。すでにチラシを印刷済みのお客様は新聞折込料金のみで新聞折込ができます。24時間年中無休！新聞折込のご質問はフリーダイヤル0120-400-904まで" />
+<meta name="keywords" content="新聞折込,チラシ,折込チラシ,折込広告,通販,折込,広告チラシ,ビラ,ポスティング" />
+<link rel="canonical" href="//www.orikomate.jp/contents/detail.html">
+
+<meta name="author" content="アット折込" />
+<link rel="shortcut icon" href="/user_data/packages/prototype/img/common/favicon.ico" />
+<link rel="icon" type="image/vnd.microsoft.icon" href="/user_data/packages/prototype/img/common/favicon.ico" />
+
+<link rel="stylesheet" href="/user_data/packages/prototype/css/import.css" type="text/css" media="all" />
+<link rel="stylesheet" href="/contents/css/style_outline.css" type="text/css" media="all">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="/rss/" />
+
+<!--[if lt IE 9]>
+<script src="/js/jquery-1.11.1.min.js"></script>
+<![endif]-->
+<!--[if gte IE 9]><!-->
+<script src="/contents/js/jquery-2.1.1.min.js"></script>
+<!--<![endif]-->
+<script type="text/javascript" src="/js/side-fixed.js"></script>
+<script type="text/javascript" src="/js/eccube.js"></script>
+<script type="text/javascript" src="/js/eccube.legacy.js"></script>
+<script type="text/javascript" src="/js/jquery.colorbox/jquery.colorbox-min.js"></script>
+<script type="text/javascript" src="/user_data/packages/prototype/js/orikomate_common.js"></script>
+
+<script type="text/javascript" src="/user_data/packages/prototype/js/login-widget.js"></script>
+
+
+<script type="text/javascript" src="/contents/js/smoothScrollEx.js"></script>
+<script type="text/javascript">
+var currentOrder = 1;
+var maxOrder;
+var interval = 3000;
+$(document).ready(function() {
+    maxOrder = $('.slideimg').length;
+    $('.sidebar-menu a').click(function(event) {
+        event.preventDefault();
+        var $self = $(this);
+        $('body').animate({ scrollTop: 0}, 500, 'swing', function(){
+            $('#slide').slideUp(500, function(){
+                document.location = $self.attr('href');
+            });
+        });
+    });
+    setTimeout(changeSlide, interval);
+
+    //お知らせ取得
+    $.get( "/api/json.php", { "Operation":"GetNews", "Service": 1 } )
+        .done(function( data ) {
+            $.each(data.NewsResponse.News, function(key, value){
+                $li = $(document.createElement('li'));
+                $p = $(document.createElement('p'));
+                if(value.news_url === null) {
+                    $p.text(value.news_comment).appendTo($li);
+                    $icon = $(document.createElement('img')).attr('src', '/user_data/packages/prototype/img/top/info.png')
+                        .attr('width', 20).attr('height', 20).prependTo($li);
+                } else {
+                    $a = $(document.createElement('a')).attr('href', value.news_url).text(value.news_comment).appendTo($p);
+                    $p.appendTo($li);
+                    if(value.link_method === '1') {
+                        $a.attr('target', '_blank');
+                    }
+                    $icon = $(document.createElement('img')).attr('src', '/user_data/packages/prototype/img/top/linkout.png')
+                        .attr('width', 20).attr('height', 20).prependTo($a);
+                }
+                $date = $(document.createElement('span')).addClass('date').text(value.cast_news_date).prependTo($li);
+                $('#news').append($li);
+            });
+        });
+    //営業日カレンダー取得
+    $.get( "/api/json.php", { "Operation":"GetCalendar", "Service": 1 } )
+        .done(function( data ) {
+            $('#calendar_wrapper').html(data.CalendarResponse.Calendar);
+        });
+});
+function changeSlide() {
+    $('.slideimg[data-order=' + currentOrder + ']').slideUp(1000);
+    if(currentOrder == maxOrder) {
+        currentOrder = 1;
+    } else {
+        currentOrder++;
+    }
+    $('.slideimg[data-order=' + currentOrder + ']').appendTo($('#slide a')).slideDown(1000);
+    setTimeout(changeSlide, interval);
+}
+</script>
+
+
+
+
+
+<script>
+$(function(){
+
+  $('.accordion h2').click(function(){
+    if($(this).next('ul').is(':visible')) { //既に開いている場所なら
+      $(this).next('ul').slideUp(300); //閉じる
+    } else { //閉じている場所なら
+      $('.accordion ul').slideUp(); //全部閉じる
+      $(this).next('ul').slideDown(300); //開く
+    }
+  });
+
+
+
+    var pageTop = $('.btn_to_top');
+    pageTop.hide();
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 600) {
+            pageTop.fadeIn();
+        } else {
+            pageTop.fadeOut();
+        }
+    });
+
+});
+</script>
+<style>
+.inner-contents .entry {
+	min-height:400px;
+}
+
+.fixed_menu {
+	display: block;
+	min-height:500px;
+	}
+</style>
+
+
+<!--20160315追加分-->
+<!--
+<script type="text/javascript" src="/contents/js/mapmenu.js"></script>
+-->
+
+	<link rel="stylesheet" href="/user_data/packages/prototype/css/style_gmcontents.css" type="text/css" media="all" />
+
+
+<script type="text/javascript" src="/contents/js/mapmenu.js"></script>
+
+<link rel="stylesheet" href="css/style_outline3.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/lpstyle.css" type="text/css" media="all" />
+<!--20160315追加分end-->
+</head>
+
+<!-- ▼BODY部 スタート -->
+
+<body>
+<a id="top"></a>
+<div class="header-line"></div>
+<div class="contents">
+
+    <!-- ▼【ヘッダー】ログイン -->
+<div class="header">
+<h1 title="初めての方へ | 新聞折込チラシなら新聞折込の激安通販オリコメイト">初めての方へ | 新聞折込チラシなら新聞折込の激安通販オリコメイト</h1>
+    <div class="logo-image">
+        <h2 title="新聞折込・折込チラシの通販サイト【オリコメイト】"><a href="/">新聞折込・折込チラシの通販サイト【オリコメイト】</a></h2>
+    </div>
+    <div class="left-contents">
+        <div class="header-title">
+新聞折込なら新聞折込通販サイトのオリコメイトにお任せください！
+        </div>
+        <div class="header-navi">
+            <a href="/contents/detail.html" class="border_l navi-new_current">初めての方</a>
+
+            <a href="/orikomi_area/tokyo/chiyoda.html" class="navi-area">対応エリア</a>
+            <a href="/user_data/deadline.php" class="navi-support">締切スケジュール</a>
+<a href="/contents/template.html" class="navi-service">テンプレート</a>
+            <a href="/contents/qa.html" class="navi-agent navi-last">サポートＱ＆Ａ</a>
+        </div>
+    </div>
+    <div class="right-contents">
+        <div class="header-link">
+            <a href="/mypage/login.php" class="navi-myoriko">会員ログイン</a>
+        </div>
+        <div class="header-info">
+            <a href="/entry/kiyaku.php" class="navi-regist">新規会員登録はこちら</a>
+        </div>
+    </div>
+</div>
+<!-- ▲【ヘッダー】ログイン -->
+
+</div>
+
+<div class="header-bottom-line"></div>
+
+<div class="contents">
+<div class="inner-contents">
+
+
+
+
+<!-- ▼メイン -->
+<div class="entry">
+
+
+
+
+                <div class="breadcrumbs">
+                    <a href="/">オリコメイトホーム</a> &gt;
+                        初めてチラシを新聞折込される方へ
+                </div>
+
+<div id="lpPage">
+<div id="lPcatch" class="of_h">
+	<h2>効果絶大！地域の集客なら新聞折込チラシ</h2>
+	<p>折込チラシ1000部で6,984円～（税込み）お申し込み可能！！</p>
+	<h3>全新聞社が広報協力！！</h3>
+	<ul>
+		<li>朝日新聞</li>
+		<li>毎日新聞</li>
+		<li>読売新聞</li>
+		<li>日経新聞</li>
+		<li>産経新聞</li>
+		<li>東京新聞</li>
+	</ul>
+	<p>※その他、地方の主要な新聞全般にも対応しております。お気軽にお問い合わせください。</p>
+</div>
+
+<div id="lPprocess" class="of_h mb20">
+	<h3>お申し込みはとっても簡単3ステップ！！</h3>
+	<ul>
+		<li>Step1：折込チラシを配る都道府県を選ぶ</li>
+		<li>Step2：料金表から折込チラシのサイズと枚数を選ぶ</li>
+		<li>Step3：折込チラシを配る詳細エリアを選ぶ</li>
+	</ul>
+</div>
+
+<div class="mainmap mb50">
+<div class="mainmapin">
+<h2>新聞折込する希望のエリアを選ぶ</h2>
+
+
+<div class="mapmenu">
+    <label class="tokyolabel" for="Panel1">東京都</label>
+    <input type="checkbox" id="Panel1" class="on-off" />
+    <ul class="tokyo">
+	 <li class="m_tokyo23toubu"><span class="chiikititle">東京都23区 東部</span><ul>
+	 <li><a href="/kanto/tokyo/adachi"><span>足立区</span></a></li>
+	 <li><a href="/kanto/tokyo/katsushika"><span>葛飾区</span></a></li>
+	 <li><a href="/kanto/tokyo/arakawa"><span>荒川区</span></a></li>
+	 <li><a href="/kanto/tokyo/daito"><span>台東区</span></a></li>
+	 <li><a href="/kanto/tokyo/sumida"><span>墨田区</span></a></li>
+	 <li><a href="/kanto/tokyo/koutou"><span>江東区</span></a></li>
+	 <li><a href="/kanto/tokyo/edogawa"><span>江戸川区</span></a></li>
+	</ul></li>
+	 <li class="m_tokyo23seibu"><span class="chiikititle">東京都23区 西部</span><ul>
+	 <li><a href="/kanto/tokyo/nerima"><span>練馬区</span></a></li>
+	 <li><a href="/kanto/tokyo/itabashi"><span>板橋区</span></a></li>
+	 <li><a href="/kanto/tokyo/kita"><span>北区</span></a></li>
+	 <li><a href="/kanto/tokyo/suginami"><span>杉並区</span></a></li>
+	 <li><a href="/kanto/tokyo/nakano"><span>中野区</span></a></li>
+	 <li><a href="/kanto/tokyo/toshima"><span>豊島区</span></a></li>
+	 <li><a href="/kanto/tokyo/bunkyo"><span>文京区</span></a></li>
+	 <li><a href="/kanto/tokyo/shinjuku"><span>新宿区</span></a></li>
+	 <li><a href="/kanto/tokyo/chiyoda"><span>千代田区</span></a></li>
+	 <li><a href="/kanto/tokyo/chuo"><span>中央区</span></a></li>
+	 <li><a href="/kanto/tokyo/setagaya"><span>世田谷区</span></a></li>
+	 <li><a href="/kanto/tokyo/shibuya"><span>渋谷区</span></a></li>
+	 <li><a href="/kanto/tokyo/minato"><span>港区</span></a></li>
+	 <li><a href="/kanto/tokyo/meguro"><span>目黒区</span></a></li>
+	 <li><a href="/kanto/tokyo/shinagawa"><span>品川区</span></a></li>
+	 <li><a href="/kanto/tokyo/oota"><span>大田区</span></a></li>
+	</ul></li>
+	 <li class="m_tamatiikihokubu"><span class="chiikititle">多摩北部</span><ul>
+	 <li><a href="/kanto/tokyo/tachikawa"><span>立川市</span></a></li>
+	 <li><a href="/kanto/tokyo/musashino"><span>武蔵野市</span></a></li>
+	 <li><a href="/kanto/tokyo/mitaka"><span>三鷹市</span></a></li>
+	 <li><a href="/kanto/tokyo/fuchu"><span>府中市</span></a></li>
+	 <li><a href="/kanto/tokyo/akishima"><span>昭島市</span></a></li>
+	 <li><a href="/kanto/tokyo/chofu"><span>調布市</span></a></li>
+	 <li><a href="/kanto/tokyo/koganei"><span>小金井市</span></a></li>
+	 <li><a href="/kanto/tokyo/kodaira"><span>小平市</span></a></li>
+	 <li><a href="/kanto/tokyo/higashimurayama"><span>東村山市</span></a></li>
+	 <li><a href="/kanto/tokyo/kokubunji"><span>国分寺市</span></a></li>
+	 <li><a href="/kanto/tokyo/kunitachi"><span>国立市</span></a></li>
+	 <li><a href="/kanto/tokyo/komae"><span>狛江市</span></a></li>
+	 <li><a href="/kanto/tokyo/higashiyamato"><span>東大和市</span></a></li>
+	 <li><a href="/kanto/tokyo/kiyose"><span>清瀬市</span></a></li>
+	 <li><a href="/kanto/tokyo/higashikurume"><span>東久留米市</span></a></li>
+	 <li><a href="/kanto/tokyo/musashimurayama"><span>武蔵村山市</span></a></li>
+	 <li><a href="/kanto/tokyo/nishitokyo"><span>西東京市</span></a></li>
+	</ul></li>
+	 <li class="m_tamatiikiseibu"><span class="chiikititle">多摩西部</span><ul>
+	 <li><a href="/kanto/tokyo/oume"><span>青梅市</span></a></li>
+	 <li><a href="/kanto/tokyo/hamura"><span>羽村市</span></a></li>
+	 <li><a href="/kanto/tokyo/akiruno"><span>あきる野市</span></a></li>
+	 <li><a href="/kanto/tokyo/fussa"><span>福生市</span></a></li>
+	</ul></li>
+	 <li class="m_tamatiinanbu"><span class="chiikititle">多摩南部</span><ul>
+	 <li><a href="/kanto/tokyo/hachiouji"><span>八王子市</span></a></li>
+	 <li><a href="/kanto/tokyo/hino"><span>日野市</span></a></li>
+	 <li><a href="/kanto/tokyo/tama"><span>多摩市</span></a></li>
+	 <li><a href="/kanto/tokyo/inagi"><span>稲城市</span></a></li>
+	 <li><a href="/kanto/tokyo/machida"><span>町田市</span></a></li>
+	</ul></li>
+    </ul>
+    <label class="kanagawalabel" for="Panel12">神奈川県</label>
+    <input type="checkbox" id="Panel12" class="on-off" />
+    <ul class="kanagawa">
+	 <li class="m_yokohama"><span class="chiikititle">横浜</span><ul>
+	 <li><a href="/kanto/kanagawa/tsurumi"><span>横浜市鶴見区</span></a></li>
+	 <li><a href="/kanto/kanagawa/kanagawaku"><span>横浜市神奈川区</span></a></li>
+	 <li><a href="/kanto/kanagawa/nishi"><span>横浜市西区</span></a></li>
+	 <li><a href="/kanto/kanagawa/naka"><span>横浜市中区</span></a></li>
+	 <li><a href="/kanto/kanagawa/yokohama-minami"><span>横浜市南区</span></a></li>
+	 <li><a href="/kanto/kanagawa/hodogaya"><span>横浜市保土ケ谷区</span></a></li>
+	 <li><a href="/kanto/kanagawa/isogo"><span>横浜市磯子区</span></a></li>
+	 <li><a href="/kanto/kanagawa/kanazawa"><span>横浜市金沢区</span></a></li>
+	 <li><a href="/kanto/kanagawa/kohoku"><span>横浜市港北区</span></a></li>
+	 <li><a href="/kanto/kanagawa/totsuka"><span>横浜市戸塚区</span></a></li>
+	 <li><a href="/kanto/kanagawa/konan"><span>横浜市港南区</span></a></li>
+	 <li><a href="/kanto/kanagawa/asahi"><span>横浜市旭区</span></a></li>
+	 <li><a href="/kanto/kanagawa/yokohama-midori"><span>横浜市緑区</span></a></li>
+	 <li><a href="/kanto/kanagawa/seya"><span>横浜市瀬谷区</span></a></li>
+	 <li><a href="/kanto/kanagawa/sakae"><span>横浜市栄区</span></a></li>
+	 <li><a href="/kanto/kanagawa/izumi"><span>横浜市泉区</span></a></li>
+	 <li><a href="/kanto/kanagawa/aoba"><span>横浜市青葉区</span></a></li>
+	 <li><a href="/kanto/kanagawa/tuzuki"><span>横浜市都筑区</span></a></li>
+	</ul></li>
+	 <li class="m_kawasaki"><span class="chiikititle">川崎</span><ul>
+	 <li><a href="/kanto/kanagawa/kawasaki" class="m_kawasaki01"><span>川崎市川崎区</span></a></li>
+	 <li><a href="/kanto/kanagawa/saiwai" class="m_kawasaki02"><span>川崎市幸区</span></a></li>
+	 <li><a href="/kanto/kanagawa/nakahara" class="m_kawasaki03"><span>川崎市中原区</span></a></li>
+	 <li><a href="/kanto/kanagawa/takatsu" class="m_kawasaki04"><span>川崎市高津区</span></a></li>
+	 <li><a href="/kanto/kanagawa/tama" class="m_kawasaki05"><span>川崎市多摩区</span></a></li>
+	 <li><a href="/kanto/kanagawa/miyamae" class="m_kawasaki06"><span>川崎市宮前区</span></a></li>
+	 <li><a href="/kanto/kanagawa/asao" class="m_kawasaki07"><span>川崎市麻生区</span></a></li>
+	 </ul></li>
+	 <li class="m_kenhoku"><span class="chiikititle">県北</span><ul>
+	 <li><a href="/kanto/kanagawa/sagamihara-midori"><span>相模原市緑区</span></a></li>
+	 <li><a href="/kanto/kanagawa/chuo"><span>相模原市中央区</span></a></li>
+	 <li><a href="/kanto/kanagawa/sagamihara-minami"><span>相模原市南区</span></a></li>
+	 </ul></li>
+	 <li class="m_kennaka"><span class="chiikititle">県中</span><ul>
+	 <li><a href="/kanto/kanagawa/ebina"><span>海老名市</span></a></li>
+	 <li><a href="/kanto/kanagawa/yamato"><span>大和市</span></a></li>
+	 <li><a href="/kanto/kanagawa/zama"><span>座間市</span></a></li>
+	 <li><a href="/kanto/kanagawa/ayase"><span>綾瀬市</span></a></li>
+	 </ul></li>
+	 <li class="m_tanzawa"><span class="chiikititle">丹沢</span><ul>
+	 <li><a href="/kanto/kanagawa/atsugi"><span>厚木市</span></a></li>
+	 <li><a href="/kanto/kanagawa/hadano"><span>秦野市</span></a></li>
+	 <li><a href="/kanto/kanagawa/isehara"><span>伊勢原市</span></a></li>
+	 </ul></li>
+	 <li class="m_kamakura"><span class="chiikititle">鎌倉・三浦</span><ul>
+	 <li><a href="/kanto/kanagawa/kamakura"><span>鎌倉市</span></a></li>
+	 <li><a href="/kanto/kanagawa/miura"><span>三浦市</span></a></li>
+	 <li><a href="/kanto/kanagawa/yokosuka"><span>横須賀市</span></a></li>
+	 </ul></li>
+	 <li class="m_syounan"><span class="chiikititle">湘南</span><ul>
+	 <li><a href="/kanto/kanagawa/zushi"><span>逗子市</span></a></li>
+	 <li><a href="/kanto/kanagawa/hiratsuka"><span>平塚市</span></a></li>
+	 <li><a href="/kanto/kanagawa/chigasaki"><span>茅ヶ崎市</span></a></li>
+	 <li><a href="/kanto/kanagawa/fujisawa"><span>藤沢市</span></a></li>
+	 </ul></li>
+	 <li class="m_hakone"><span class="chiikititle">箱根・足柄</span><ul>
+	 <li><a href="/kanto/kanagawa/odawara"><span>小田原市</span></a></li>
+	 <li><a href="/kanto/kanagawa/minamiashigara"><span>南足柄市</span></a></li>
+	 </ul></li>
+    </ul>
+    <label class="saitamalabel" for="Panel13">埼玉県</label>
+    <input type="checkbox" id="Panel13" class="on-off" />
+    <ul class="saitama">
+	 <li class="m_saitamatone"><span class="chiikititle">利根地域</span><ul>
+	 <li><a href="/kanto/saitama/gyoda"><span>行田市</span></a></li>
+	 <li><a href="/kanto/saitama/hanyu"><span>羽生市</span></a></li>
+	 <li><a href="/kanto/saitama/kazo"><span>加須市</span></a></li>
+	 <li><a href="/kanto/saitama/kuki"><span>久喜市</span></a></li>
+	 <li><a href="/kanto/saitama/satsute"><span>幸手市</span></a></li>
+	 <li><a href="/kanto/saitama/hasuda"><span>蓮田市</span></a></li>
+	 </ul></li>
+	 <li class="m_saitamakenou"><span class="chiikititle">県央地域</span><ul>
+	 <li><a href="/kanto/saitama/konosu"><span>鴻巣市</span></a></li>
+	 <li><a href="/kanto/saitama/kitamoto"><span>北本市</span></a></li>
+	 <li><a href="/kanto/saitama/okegawa"><span>桶川市</span></a></li>
+	 <li><a href="/kanto/saitama/ageo"><span>上尾市</span></a></li>
+	 <li><a href="/kanto/saitama/toda"><span>戸田市</span></a></li>
+	 <li><a href="/kanto/saitama/warabi"><span>蕨市</span></a></li>
+	 <li><a href="/kanto/saitama/kawaguchi"><span>川口市</span></a></li>
+	 </ul></li>
+	 <li class="m_saitamatoubu"><span class="chiikititle">東部地域</span><ul>
+	 <li><a href="/kanto/saitama/kasukabe"><span>春日部市</span></a></li>
+	 <li><a href="/kanto/saitama/koshigaya"><span>越谷市</span></a></li>
+	 <li><a href="/kanto/saitama/yoshikawa"><span>吉川市</span></a></li>
+	 <li><a href="/kanto/saitama/soka"><span>草加市</span></a></li>
+	 <li><a href="/kanto/saitama/yashio"><span>八潮市</span></a></li>
+	 <li><a href="/kanto/saitama/misato"><span>三郷市</span></a></li>
+	 </ul></li>
+	 <li class="m_saitamasaitamashi"><span class="chiikititle">さいたま市</span><ul>
+	 <li><a href="/kanto/saitama/nishi"><span>西区</span></a></li>
+	 <li><a href="/kanto/saitama/kita"><span>北区</span></a></li>
+	 <li><a href="/kanto/saitama/omiya"><span>大宮区</span></a></li>
+	 <li><a href="/kanto/saitama/minuma"><span>見沼区</span></a></li>
+	 <li><a href="/kanto/saitama/iwatsuki"><span>岩槻区</span></a></li>
+	 <li><a href="/kanto/saitama/chuo"><span>中央区</span></a></li>
+	 <li><a href="/kanto/saitama/sakura"><span>桜区</span></a></li>
+	 <li><a href="/kanto/saitama/urawa"><span>浦和区</span></a></li>
+	 <li><a href="/kanto/saitama/midori"><span>緑区</span></a></li>
+	 <li><a href="/kanto/saitama/minami"><span>南区</span></a></li>
+	 </ul></li>
+	 <li class="m_saitamahokubu"><span class="chiikititle">北部地域</span><ul>
+	 <li><a href="/kanto/saitama/honjo"><span>本庄市</span></a></li>
+	 <li><a href="/kanto/saitama/fukaya"><span>深谷市</span></a></li>
+	 <li><a href="/kanto/saitama/kumagaya"><span>熊谷市</span></a></li>
+	 </ul></li>
+	 <li class="m_saitamahino"><span class="chiikititle">比企地域</span><ul>
+	 <li><a href="/kanto/saitama/higashimatsuyama"><span>東松山市</span></a></li>
+	 </ul></li>
+	 <li class="m_saitamanansei"><span class="chiikititle">南西部地域</span><ul>
+	 <li><a href="/kanto/saitama/fujimino"><span>ふじみ野市</span></a></li>
+	 <li><a href="/kanto/saitama/fujimi"><span>富士見市</span></a></li>
+	 <li><a href="/kanto/saitama/shiki"><span>志木市</span></a></li>
+	 <li><a href="/kanto/saitama/niza"><span>新座市</span></a></li>
+	 <li><a href="/kanto/saitama/asaka"><span>朝霞市</span></a></li>
+	 <li><a href="/kanto/saitama/wako"><span>和光市</span></a></li>
+	 </ul></li>
+	 <li class="m_saitamaseibu"><span class="chiikititle">西部地域</span><ul>
+	 <li><a href="/kanto/saitama/sakado"><span>坂戸市</span></a></li>
+	 <li><a href="/kanto/saitama/hanno"><span>飯能市</span></a></li>
+	 <li><a href="/kanto/saitama/hidaka"><span>日高市</span></a></li>
+	 <li><a href="/kanto/saitama/tsurugashima"><span>鶴ヶ島市</span></a></li>
+	 <li><a href="/kanto/saitama/kawagoe"><span>川越市</span></a></li>
+	 <li><a href="/kanto/saitama/sayama"><span>狭山市</span></a></li>
+	 <li><a href="/kanto/saitama/iruma"><span>入間市</span></a></li>
+	 <li><a href="/kanto/saitama/tokorozawa"><span>所沢市</span></a></li>
+	 </ul></li>
+	 <li class="m_saitamachibu"><span class="chiikititle">秩父地域</span><ul>
+	 <li><a href="/kanto/saitama/chichibu"><span>秩父市</span></a></li>
+	 </ul></li>
+    </ul>
+
+    <label class="chibalabel" for="Panel14">千葉県</label>
+    <input type="checkbox" id="Panel14" class="on-off" />
+    <ul class="chiba">
+	 <li class="m_chibahigasikatusika"><span class="chiikititle">東葛飾地域</span><ul>
+	 <li><a href="/kanto/chiba/noda"><span>野田市</span></a></li>
+	 <li><a href="/kanto/chiba/nagareyama"><span>流山市</span></a></li>
+	 <li><a href="/kanto/chiba/kashiwa"><span>柏市</span></a></li>
+	 <li><a href="/kanto/chiba/abiko"><span>我孫子市</span></a></li>
+	 <li><a href="/kanto/chiba/matsudo"><span>松戸市</span></a></li>
+	 <li><a href="/kanto/chiba/kamagaya"><span>鎌ケ谷市</span></a></li>
+	 <li><a href="/kanto/chiba/shiroishi"><span>白井市</span></a></li>
+	 <li><a href="/kanto/chiba/inzai"><span>印西市</span></a></li>
+	 </ul></li>
+	 <li class="m_chibahokusou"><span class="chiikititle">北総地域</span><ul>
+	 <li><a href="/kanto/chiba/narita"><span>成田市</span></a></li>
+	 <li><a href="/kanto/chiba/katori"><span>香取市</span></a></li>
+	 <li><a href="/kanto/chiba/sakura"><span>佐倉市</span></a></li>
+	 <li><a href="/kanto/chiba/tomisato"><span>富里市</span></a></li>
+	 <li><a href="/kanto/chiba/yachimata"><span>八街市</span></a></li>
+
+	 </ul></li>
+	 <li class="m_chibakatunan"><span class="chiikititle">千葉・葛南地域</span><ul>
+	 <li><a href="/kanto/chiba/urayasu"><span>浦安市</span></a></li>
+	 <li><a href="/kanto/chiba/ichikawa"><span>市川市</span></a></li>
+	 <li><a href="/kanto/chiba/funabashi"><span>船橋市</span></a></li>
+	 <li><a href="/kanto/chiba/yachiyo"><span>八千代市</span></a></li>
+	 <li><a href="/kanto/chiba/narashino"><span>習志野市</span></a></li>
+	 <li><a href="/kanto/chiba/yotsukaidou"><span>四街道市</span></a></li>
+	 <li><a href="/kanto/chiba/mihama"><span>千葉市美浜区</span></a></li>
+	 <li><a href="/kanto/chiba/hanamigawa"><span>千葉市花見川区</span></a></li>
+	 <li><a href="/kanto/chiba/inage"><span>千葉市稲毛区</span></a></li>
+	 <li><a href="/kanto/chiba/chuo"><span>千葉市中央区</span></a></li>
+	 <li><a href="/kanto/chiba/wakaba"><span>千葉市若葉区</span></a></li>
+	 <li><a href="/kanto/chiba/midori"><span>千葉市緑区</span></a></li>
+	 <li><a href="/kanto/chiba/ichihara"><span>市原市</span></a></li>
+	 </ul></li>
+	 <li class="m_chibasanbukaisou"><span class="chiikititle">海匝・山武地域</span><ul>
+	 <li><a href="/kanto/chiba/choshi"><span>銚子市</span></a></li>
+	 <li><a href="/kanto/chiba/asahi"><span>旭市</span></a></li>
+	 <li><a href="/kanto/chiba/sosa"><span>匝瑳市</span></a></li>
+	 <li><a href="/kanto/chiba/sanmu"><span>山武市</span></a></li>
+	 <li><a href="/kanto/chiba/togane"><span>東金市</span></a></li>
+	 <li><a href="/kanto/chiba/ooamishirasato"><span>大網白里市</span></a></li>
+	 </ul></li>
+	 <li class="m_chibahkazusa"><span class="chiikititle">東上総地域</span><ul>
+	 <li><a href="/kanto/chiba/mobara"><span>茂原市</span></a></li>
+	 <li><a href="/kanto/chiba/isumi"><span>いすみ市</span></a></li>
+	 <li><a href="/kanto/chiba/katuura"><span>勝浦市</span></a></li>
+	 </ul></li>
+	 <li class="m_chibananbousou"><span class="chiikititle">南房総地域</span><ul>
+	 <li><a href="/kanto/chiba/sodegaura"><span>袖ケ浦市</span></a></li>
+	 <li><a href="/kanto/chiba/kisarazu"><span>木更津市</span></a></li>
+	 <li><a href="/kanto/chiba/futtsu"><span>富津市</span></a></li>
+	 <li><a href="/kanto/chiba/kimitsu"><span>君津市</span></a></li>
+	 <li><a href="/kanto/chiba/kamogawa"><span>鴨川市</span></a></li>
+	 <li><a href="/kanto/chiba/minamiboso"><span>南房総市</span></a></li>
+	 <li><a href="/kanto/chiba/tateyama"><span>館山市</span></a></li>
+	 </ul></li>
+    </ul>
+
+    <label class="ibaragilabel" for="Panel15">茨城県</label>
+    <input type="checkbox" id="Panel15" class="on-off" />
+    <ul class="ibaragi">
+	 <li class="m_ibaragikenhoku"><span class="chiikititle">県北</span><ul>
+	 <li><a href="/kanto/ibaraki/kitaibaraki"><span>北茨城市</span></a></li>
+	 <li><a href="/kanto/ibaraki/takahagi"><span>高萩市</span></a></li>
+	 <li><a href="/kanto/ibaraki/hitachiomiya"><span>常陸大宮市</span></a></li>
+	 <li><a href="/kanto/ibaraki/hitachiota"><span>常陸太田市</span></a></li>
+	 <li><a href="/kanto/ibaraki/hitachi"><span>日立市</span></a></li>
+	 <li><a href="/kanto/ibaraki/naka"><span>那珂市</span></a></li>
+	 <li><a href="/kanto/ibaraki/hitachinaka"><span>ひたちなか市</span></a></li>
+	 </ul></li>
+	 <li class="m_ibaragikenou"><span class="chiikititle">県央</span><ul>
+	 <li><a href="/kanto/ibaraki/kasama"><span>笠間市</span></a></li>
+	 <li><a href="/kanto/ibaraki/mito"><span>水戸市</span></a></li>
+	<li><a href="/kanto/ibaraki/omitama"><span>小美玉市</span></a></li>
+	 </ul></li>
+	 <li class="m_ibaragirokkou"><span class="chiikititle">鹿行</span><ul>
+	 <li><a href="/kanto/ibaraki/hokota"><span>鉾田市</span></a></li>
+	 <li><a href="/kanto/ibaraki/namegata"><span>行方市</span></a></li>
+	 <li><a href="/kanto/ibaraki/kashima"><span>鹿嶋市</span></a></li>
+	 <li><a href="/kanto/ibaraki/itako"><span>潮来市</span></a></li>
+	 <li><a href="/kanto/ibaraki/kasumi"><span>神栖市</span></a></li>
+	 </ul></li>
+	 <li class="m_ibaragikenisi"><span class="chiikititle">県西</span><ul>
+	 <li><a href="/kanto/ibaraki/koga"><span>古河市</span></a></li>
+	 <li><a href="/kanto/ibaraki/yuki"><span>結城市</span></a></li>
+	 <li><a href="/kanto/ibaraki/chikusei"><span>筑西市</span></a></li>
+	 <li><a href="/kanto/ibaraki/sakuragawa"><span>桜川市</span></a></li>
+	 <li><a href="/kanto/ibaraki/shimotsuma"><span>下妻市</span></a></li>
+	 <li><a href="/kanto/ibaraki/bando"><span>坂東市</span></a></li>
+	 <li><a href="/kanto/ibaraki/joso"><span>常総市</span></a></li>
+	 </ul></li>
+	 <li class="m_ibaragikennan"><span class="chiikititle">県南</span><ul>
+	 <li><a href="/kanto/ibaraki/ishioka"><span>石岡市</span></a></li>
+	 <li><a href="/kanto/ibaraki/tsukuba"><span>つくば市</span></a></li>
+	 <li><a href="/kanto/ibaraki/tsuchiura"><span>土浦市</span></a></li>
+	 <li><a href="/kanto/ibaraki/kasumigaura"><span>かすみがうら市</span></a></li>
+	 <li><a href="/kanto/ibaraki/tsukubamirai"><span>つくばみらい市</span></a></li>
+	 <li><a href="/kanto/ibaraki/ushiku"><span>牛久市</span></a></li>
+	 <li><a href="/kanto/ibaraki/moriya"><span>守谷市</span></a></li>
+	 <li><a href="/kanto/ibaraki/toride"><span>取手市</span></a></li>
+	 <li><a href="/kanto/ibaraki/ryugasaki"><span>龍ケ崎市</span></a></li>
+	 <li><a href="/kanto/ibaraki/inashiki"><span>稲敷市</span></a></li>
+	 </ul></li>
+    </ul>
+    <label class="totigilabel" for="Panel16">栃木県</label>
+    <input type="checkbox" id="Panel16" class="on-off" />
+    <ul class="totigi">
+	 <li class="m_nasusibu"><span class="chiikititle">那須支部</span><ul>
+	 <li><a href="/kanto/tochigi/nasushiobara"><span>那須塩原市</span></a></li>
+	 <li><a href="/kanto/tochigi/otawara"><span>大田原市</span></a></li>
+	 </ul></li>
+	 <li class="m_minaminasusibu"><span class="chiikititle">南那須支部</span><ul>
+	 <li><a href="/kanto/tochigi/nasukarasuyama"><span>那須烏山市</span></a></li>
+	 </ul></li>
+	 <li class="m_sioyasibu"><span class="chiikititle">塩谷支部</span><ul>
+	 <li><a href="/kanto/tochigi/yaita"><span>矢板市</span></a></li>
+	 <li><a href="/kanto/tochigi/sakura"><span>さくら市</span></a></li>
+	 <li><a href="/kanto/tochigi/oyama"><span>小山市</span></a></li>
+	 <li><a href="/kanto/tochigi/mooka"><span>真岡市</span></a></li>
+	 </ul></li>
+	 <li class="m_kamitogasibu"><span class="chiikititle">上都賀支部</span><ul>
+	 <li><a href="/kanto/tochigi/nikko"><span>日光市</span></a></li>
+	 <li><a href="/kanto/tochigi/kanuma"><span>鹿沼市</span></a></li>
+	 </ul></li>
+	 <li class="m_utunomiyasibu"><span class="chiikititle">宇都宮支部</span><ul>
+	 <li><a href="/kanto/tochigi/utsunomiya"><span>宇都宮市</span></a></li>
+	 </ul></li>
+	 <li class="m_simotogasibu"><span class="chiikititle">下都賀支部</span><ul>
+	 <li><a href="/kanto/tochigi/shimotsuke"><span>下野市</span></a></li>
+	 <li><a href="/kanto/tochigi/tochigishi"><span>栃木市</span></a></li>
+	 </ul></li>
+	 <li class="m_asikaga"><span class="chiikititle">足利・佐野支部</span><ul>
+	 <li><a href="/kanto/tochigi/sano"><span>佐野市</span></a></li>
+	 <li><a href="/kanto/tochigi/ashikaga"><span>足利市</span></a></li>
+	 </ul></li>
+    </ul>
+    <label class="gunmalabel" for="Panel17">群馬県</label>
+    <input type="checkbox" id="Panel17" class="on-off" />
+    <ul class="gunma">
+	 <li class="m_gunmatoubu"><span class="chiikititle">東部地域</span><ul>
+	 <li><a href="/kanto/gunma/kiryu"><span>桐生市</span></a></li>
+	 <li><a href="/kanto/gunma/ota"><span>太田市</span></a></li>
+	 <li><a href="/kanto/gunma/tatebayashi"><span>館林市</span></a></li>
+	 <li><a href="/kanto/gunma/midori"><span>みどり市</span></a></li>
+	 </ul></li>
+	 <li class="m_gunmachubu"><span class="chiikititle">中部地域</span><ul>
+	 <li><a href="/kanto/gunma/maebashi"><span>前橋市</span></a></li>
+	 <li><a href="/kanto/gunma/isesaki"><span>伊勢崎市</span></a></li>
+	 <li><a href="/kanto/gunma/shibukawa"><span>渋川市</span></a></li>
+	 </ul></li>
+	 <li class="m_gunmaseibu"><span class="chiikititle">西部地域</span><ul>
+	 <li><a href="/kanto/gunma/takasaki"><span>高崎市</span></a></li>
+	 <li><a href="/kanto/gunma/fujioka"><span>藤岡市</span></a></li>
+	 <li><a href="/kanto/gunma/tomioka"><span>富岡市</span></a></li>
+	 <li><a href="/kanto/gunma/annaka"><span>安中市</span></a></li>
+	 </ul></li>
+    </ul>
+
+
+
+<div class="labelreset"><span>日本地図に戻る</span></div>
+
+
+</div><!-- end of #mapmenu -->
+
+</div><!-- end of #mainmapin -->
+</div><!-- end of #mainmap -->
+
+
+<div id="lPcontact" class="of_h mb50">
+	<h2>ご相談・お申し込みはこちら</h2>
+	<p>お気軽にどうぞ！</p>
+	<a href="/contact/"></a>
+</div>
+
+<div class="of_h lPtitle01 mb50">
+	<h2>新聞を読む人の約80％が新聞折込チラシを見ています！</h2>
+	<div id="lPgraph">
+		<h3>新聞購読者の折込チラシの閲覧状況</h3>
+		<dl>
+			<dt>30代</dt>
+				<dd>66.8％</dd>
+			<dt>40代</dt>
+				<dd>81.3％</dd>
+			<dt>50代</dt>
+				<dd>78.9％</dd>
+			<dt>60代</dt>
+				<dd>80.8％</dd>
+			<dt>70代</dt>
+				<dd>77.8％</dd>
+		</dl>
+	</div>
+</div>
+
+<div class="of_h lPtitle02 mb50">
+	<h2>ご依頼があった地域の家庭へダイレクトにお届けします！</h2>
+	<div id="lPflow">
+		<dl>
+			<dt>お客様</dt>
+				<dd>ホームページから、折込する地域を選んで新聞折込のお申し込み。</dd>
+			<dt>当社</dt>
+				<dd>お客様のご依頼内容でチラシをご指定の期日・新聞社・エリアに沿って新聞販売店舗へ配送。</dd>
+			<dt>新聞販売店</dt>
+				<dd>届いたチラシは丁寧に新聞紙に折り込まれ、次々に出荷されます。</dd>
+			<dt>地域の家庭へ</dt>
+				<dd>新聞配達の契約をしているエリア内の顧客へ届きます。</dd>
+		</dl>
+	</div>
+</div>
+
+<div class="of_h lPtitle03 mb50">
+	<h2>新聞折込チラシの広告力があなたの期待に応えます！</h2>
+	<div id="lPcheckbox">
+		<ul>
+			<li>すぐにでも効果がある広告媒体がいい！</li>
+			<li>お店、イベント開催地近くにお住まいの方に来て欲しい！</li>
+			<li>予算を中心にできる限りの広告をしたい！</li>
+			<li>ターゲットを絞って、宣伝広告をしたい！</li>
+			<li>より信頼性のある広告媒体を利用したい！</li>
+			<li>期間を絞って、宣伝広告をしたい！</li>
+		</ul>
+	</div>
+</div>
+
+<div class="mainmap2 mb50">
+<div class="mainmapin">
+<h2>新聞折込する希望のエリアを選ぶ</h2>
+
+
+<div class="mapmenu">
+    <label class="tokyolabel" for="Panel1">東京都</label>
+    <input type="checkbox" id="Panel1" class="on-off" />
+    <ul class="tokyo">
+	 <li class="m_tokyo23toubu"><span class="chiikititle">東京都23区 東部</span><ul>
+	 <li><a href="/kanto/tokyo/adachi"><span>足立区</span></a></li>
+	 <li><a href="/kanto/tokyo/katsushika"><span>葛飾区</span></a></li>
+	 <li><a href="/kanto/tokyo/arakawa"><span>荒川区</span></a></li>
+	 <li><a href="/kanto/tokyo/daito"><span>台東区</span></a></li>
+	 <li><a href="/kanto/tokyo/sumida"><span>墨田区</span></a></li>
+	 <li><a href="/kanto/tokyo/koutou"><span>江東区</span></a></li>
+	 <li><a href="/kanto/tokyo/edogawa"><span>江戸川区</span></a></li>
+	</ul></li>
+	 <li class="m_tokyo23seibu"><span class="chiikititle">東京都23区 西部</span><ul>
+	 <li><a href="/kanto/tokyo/nerima"><span>練馬区</span></a></li>
+	 <li><a href="/kanto/tokyo/itabashi"><span>板橋区</span></a></li>
+	 <li><a href="/kanto/tokyo/kita"><span>北区</span></a></li>
+	 <li><a href="/kanto/tokyo/suginami"><span>杉並区</span></a></li>
+	 <li><a href="/kanto/tokyo/nakano"><span>中野区</span></a></li>
+	 <li><a href="/kanto/tokyo/toshima"><span>豊島区</span></a></li>
+	 <li><a href="/kanto/tokyo/bunkyo"><span>文京区</span></a></li>
+	 <li><a href="/kanto/tokyo/shinjuku"><span>新宿区</span></a></li>
+	 <li><a href="/kanto/tokyo/chiyoda"><span>千代田区</span></a></li>
+	 <li><a href="/kanto/tokyo/chuo"><span>中央区</span></a></li>
+	 <li><a href="/kanto/tokyo/setagaya"><span>世田谷区</span></a></li>
+	 <li><a href="/kanto/tokyo/shibuya"><span>渋谷区</span></a></li>
+	 <li><a href="/kanto/tokyo/minato"><span>港区</span></a></li>
+	 <li><a href="/kanto/tokyo/meguro"><span>目黒区</span></a></li>
+	 <li><a href="/kanto/tokyo/shinagawa"><span>品川区</span></a></li>
+	 <li><a href="/kanto/tokyo/oota"><span>大田区</span></a></li>
+	</ul></li>
+	 <li class="m_tamatiikihokubu"><span class="chiikititle">多摩北部</span><ul>
+	 <li><a href="/kanto/tokyo/tachikawa"><span>立川市</span></a></li>
+	 <li><a href="/kanto/tokyo/musashino"><span>武蔵野市</span></a></li>
+	 <li><a href="/kanto/tokyo/mitaka"><span>三鷹市</span></a></li>
+	 <li><a href="/kanto/tokyo/fuchu"><span>府中市</span></a></li>
+	 <li><a href="/kanto/tokyo/akishima"><span>昭島市</span></a></li>
+	 <li><a href="/kanto/tokyo/chofu"><span>調布市</span></a></li>
+	 <li><a href="/kanto/tokyo/koganei"><span>小金井市</span></a></li>
+	 <li><a href="/kanto/tokyo/kodaira"><span>小平市</span></a></li>
+	 <li><a href="/kanto/tokyo/higashimurayama"><span>東村山市</span></a></li>
+	 <li><a href="/kanto/tokyo/kokubunji"><span>国分寺市</span></a></li>
+	 <li><a href="/kanto/tokyo/kunitachi"><span>国立市</span></a></li>
+	 <li><a href="/kanto/tokyo/komae"><span>狛江市</span></a></li>
+	 <li><a href="/kanto/tokyo/higashiyamato"><span>東大和市</span></a></li>
+	 <li><a href="/kanto/tokyo/kiyose"><span>清瀬市</span></a></li>
+	 <li><a href="/kanto/tokyo/higashikurume"><span>東久留米市</span></a></li>
+	 <li><a href="/kanto/tokyo/musashimurayama"><span>武蔵村山市</span></a></li>
+	 <li><a href="/kanto/tokyo/nishitokyo"><span>西東京市</span></a></li>
+	</ul></li>
+	 <li class="m_tamatiikiseibu"><span class="chiikititle">多摩西部</span><ul>
+	 <li><a href="/kanto/tokyo/oume"><span>青梅市</span></a></li>
+	 <li><a href="/kanto/tokyo/hamura"><span>羽村市</span></a></li>
+	 <li><a href="/kanto/tokyo/akiruno"><span>あきる野市</span></a></li>
+	 <li><a href="/kanto/tokyo/fussa"><span>福生市</span></a></li>
+	</ul></li>
+	 <li class="m_tamatiinanbu"><span class="chiikititle">多摩南部</span><ul>
+	 <li><a href="/kanto/tokyo/hachiouji"><span>八王子市</span></a></li>
+	 <li><a href="/kanto/tokyo/hino"><span>日野市</span></a></li>
+	 <li><a href="/kanto/tokyo/tama"><span>多摩市</span></a></li>
+	 <li><a href="/kanto/tokyo/inagi"><span>稲城市</span></a></li>
+	 <li><a href="/kanto/tokyo/machida"><span>町田市</span></a></li>
+	</ul></li>
+    </ul>
+    <label class="kanagawalabel" for="Panel12">神奈川県</label>
+    <input type="checkbox" id="Panel12" class="on-off" />
+    <ul class="kanagawa">
+	 <li class="m_yokohama"><span class="chiikititle">横浜</span><ul>
+	 <li><a href="/kanto/kanagawa/tsurumi"><span>横浜市鶴見区</span></a></li>
+	 <li><a href="/kanto/kanagawa/kanagawaku"><span>横浜市神奈川区</span></a></li>
+	 <li><a href="/kanto/kanagawa/nishi"><span>横浜市西区</span></a></li>
+	 <li><a href="/kanto/kanagawa/naka"><span>横浜市中区</span></a></li>
+	 <li><a href="/kanto/kanagawa/yokohama-minami"><span>横浜市南区</span></a></li>
+	 <li><a href="/kanto/kanagawa/hodogaya"><span>横浜市保土ケ谷区</span></a></li>
+	 <li><a href="/kanto/kanagawa/isogo"><span>横浜市磯子区</span></a></li>
+	 <li><a href="/kanto/kanagawa/kanazawa"><span>横浜市金沢区</span></a></li>
+	 <li><a href="/kanto/kanagawa/kohoku"><span>横浜市港北区</span></a></li>
+	 <li><a href="/kanto/kanagawa/totsuka"><span>横浜市戸塚区</span></a></li>
+	 <li><a href="/kanto/kanagawa/konan"><span>横浜市港南区</span></a></li>
+	 <li><a href="/kanto/kanagawa/asahi"><span>横浜市旭区</span></a></li>
+	 <li><a href="/kanto/kanagawa/yokohama-midori"><span>横浜市緑区</span></a></li>
+	 <li><a href="/kanto/kanagawa/seya"><span>横浜市瀬谷区</span></a></li>
+	 <li><a href="/kanto/kanagawa/sakae"><span>横浜市栄区</span></a></li>
+	 <li><a href="/kanto/kanagawa/izumi"><span>横浜市泉区</span></a></li>
+	 <li><a href="/kanto/kanagawa/aoba"><span>横浜市青葉区</span></a></li>
+	 <li><a href="/kanto/kanagawa/tuzuki"><span>横浜市都筑区</span></a></li>
+	</ul></li>
+	 <li class="m_kawasaki"><span class="chiikititle">川崎</span><ul>
+	 <li><a href="/kanto/kanagawa/kawasaki" class="m_kawasaki01"><span>川崎市川崎区</span></a></li>
+	 <li><a href="/kanto/kanagawa/saiwai" class="m_kawasaki02"><span>川崎市幸区</span></a></li>
+	 <li><a href="/kanto/kanagawa/nakahara" class="m_kawasaki03"><span>川崎市中原区</span></a></li>
+	 <li><a href="/kanto/kanagawa/takatsu" class="m_kawasaki04"><span>川崎市高津区</span></a></li>
+	 <li><a href="/kanto/kanagawa/tama" class="m_kawasaki05"><span>川崎市多摩区</span></a></li>
+	 <li><a href="/kanto/kanagawa/miyamae" class="m_kawasaki06"><span>川崎市宮前区</span></a></li>
+	 <li><a href="/kanto/kanagawa/asao" class="m_kawasaki07"><span>川崎市麻生区</span></a></li>
+	 </ul></li>
+	 <li class="m_kenhoku"><span class="chiikititle">県北</span><ul>
+	 <li><a href="/kanto/kanagawa/sagamihara-midori"><span>相模原市緑区</span></a></li>
+	 <li><a href="/kanto/kanagawa/chuo"><span>相模原市中央区</span></a></li>
+	 <li><a href="/kanto/kanagawa/sagamihara-minami"><span>相模原市南区</span></a></li>
+	 </ul></li>
+	 <li class="m_kennaka"><span class="chiikititle">県中</span><ul>
+	 <li><a href="/kanto/kanagawa/ebina"><span>海老名市</span></a></li>
+	 <li><a href="/kanto/kanagawa/yamato"><span>大和市</span></a></li>
+	 <li><a href="/kanto/kanagawa/zama"><span>座間市</span></a></li>
+	 <li><a href="/kanto/kanagawa/ayase"><span>綾瀬市</span></a></li>
+	 </ul></li>
+	 <li class="m_tanzawa"><span class="chiikititle">丹沢</span><ul>
+	 <li><a href="/kanto/kanagawa/atsugi"><span>厚木市</span></a></li>
+	 <li><a href="/kanto/kanagawa/hadano"><span>秦野市</span></a></li>
+	 <li><a href="/kanto/kanagawa/isehara"><span>伊勢原市</span></a></li>
+	 </ul></li>
+	 <li class="m_kamakura"><span class="chiikititle">鎌倉・三浦</span><ul>
+	 <li><a href="/kanto/kanagawa/kamakura"><span>鎌倉市</span></a></li>
+	 <li><a href="/kanto/kanagawa/miura"><span>三浦市</span></a></li>
+	 <li><a href="/kanto/kanagawa/yokosuka"><span>横須賀市</span></a></li>
+	 </ul></li>
+	 <li class="m_syounan"><span class="chiikititle">湘南</span><ul>
+	 <li><a href="/kanto/kanagawa/zushi"><span>逗子市</span></a></li>
+	 <li><a href="/kanto/kanagawa/hiratsuka"><span>平塚市</span></a></li>
+	 <li><a href="/kanto/kanagawa/chigasaki"><span>茅ヶ崎市</span></a></li>
+	 <li><a href="/kanto/kanagawa/fujisawa"><span>藤沢市</span></a></li>
+	 </ul></li>
+	 <li class="m_hakone"><span class="chiikititle">箱根・足柄</span><ul>
+	 <li><a href="/kanto/kanagawa/odawara"><span>小田原市</span></a></li>
+	 <li><a href="/kanto/kanagawa/minamiashigara"><span>南足柄市</span></a></li>
+	 </ul></li>
+    </ul>
+    <label class="saitamalabel" for="Panel13">埼玉県</label>
+    <input type="checkbox" id="Panel13" class="on-off" />
+    <ul class="saitama">
+	 <li class="m_saitamatone"><span class="chiikititle">利根地域</span><ul>
+	 <li><a href="/kanto/saitama/gyoda"><span>行田市</span></a></li>
+	 <li><a href="/kanto/saitama/hanyu"><span>羽生市</span></a></li>
+	 <li><a href="/kanto/saitama/kazo"><span>加須市</span></a></li>
+	 <li><a href="/kanto/saitama/kuki"><span>久喜市</span></a></li>
+	 <li><a href="/kanto/saitama/satsute"><span>幸手市</span></a></li>
+	 <li><a href="/kanto/saitama/hasuda"><span>蓮田市</span></a></li>
+	 </ul></li>
+	 <li class="m_saitamakenou"><span class="chiikititle">県央地域</span><ul>
+	 <li><a href="/kanto/saitama/konosu"><span>鴻巣市</span></a></li>
+	 <li><a href="/kanto/saitama/kitamoto"><span>北本市</span></a></li>
+	 <li><a href="/kanto/saitama/okegawa"><span>桶川市</span></a></li>
+	 <li><a href="/kanto/saitama/ageo"><span>上尾市</span></a></li>
+	 <li><a href="/kanto/saitama/toda"><span>戸田市</span></a></li>
+	 <li><a href="/kanto/saitama/warabi"><span>蕨市</span></a></li>
+	 <li><a href="/kanto/saitama/kawaguchi"><span>川口市</span></a></li>
+	 </ul></li>
+	 <li class="m_saitamatoubu"><span class="chiikititle">東部地域</span><ul>
+	 <li><a href="/kanto/saitama/kasukabe"><span>春日部市</span></a></li>
+	 <li><a href="/kanto/saitama/koshigaya"><span>越谷市</span></a></li>
+	 <li><a href="/kanto/saitama/yoshikawa"><span>吉川市</span></a></li>
+	 <li><a href="/kanto/saitama/soka"><span>草加市</span></a></li>
+	 <li><a href="/kanto/saitama/yashio"><span>八潮市</span></a></li>
+	 <li><a href="/kanto/saitama/misato"><span>三郷市</span></a></li>
+	 </ul></li>
+	 <li class="m_saitamasaitamashi"><span class="chiikititle">さいたま市</span><ul>
+	 <li><a href="/kanto/saitama/nishi"><span>西区</span></a></li>
+	 <li><a href="/kanto/saitama/kita"><span>北区</span></a></li>
+	 <li><a href="/kanto/saitama/omiya"><span>大宮区</span></a></li>
+	 <li><a href="/kanto/saitama/minuma"><span>見沼区</span></a></li>
+	 <li><a href="/kanto/saitama/iwatsuki"><span>岩槻区</span></a></li>
+	 <li><a href="/kanto/saitama/chuo"><span>中央区</span></a></li>
+	 <li><a href="/kanto/saitama/sakura"><span>桜区</span></a></li>
+	 <li><a href="/kanto/saitama/urawa"><span>浦和区</span></a></li>
+	 <li><a href="/kanto/saitama/midori"><span>緑区</span></a></li>
+	 <li><a href="/kanto/saitama/minami"><span>南区</span></a></li>
+	 </ul></li>
+	 <li class="m_saitamahokubu"><span class="chiikititle">北部地域</span><ul>
+	 <li><a href="/kanto/saitama/honjo"><span>本庄市</span></a></li>
+	 <li><a href="/kanto/saitama/fukaya"><span>深谷市</span></a></li>
+	 <li><a href="/kanto/saitama/kumagaya"><span>熊谷市</span></a></li>
+	 </ul></li>
+	 <li class="m_saitamahino"><span class="chiikititle">比企地域</span><ul>
+	 <li><a href="/kanto/saitama/higashimatsuyama"><span>東松山市</span></a></li>
+	 </ul></li>
+	 <li class="m_saitamanansei"><span class="chiikititle">南西部地域</span><ul>
+	 <li><a href="/kanto/saitama/fujimino"><span>ふじみ野市</span></a></li>
+	 <li><a href="/kanto/saitama/fujimi"><span>富士見市</span></a></li>
+	 <li><a href="/kanto/saitama/shiki"><span>志木市</span></a></li>
+	 <li><a href="/kanto/saitama/niza"><span>新座市</span></a></li>
+	 <li><a href="/kanto/saitama/asaka"><span>朝霞市</span></a></li>
+	 <li><a href="/kanto/saitama/wako"><span>和光市</span></a></li>
+	 </ul></li>
+	 <li class="m_saitamaseibu"><span class="chiikititle">西部地域</span><ul>
+	 <li><a href="/kanto/saitama/sakado"><span>坂戸市</span></a></li>
+	 <li><a href="/kanto/saitama/hanno"><span>飯能市</span></a></li>
+	 <li><a href="/kanto/saitama/hidaka"><span>日高市</span></a></li>
+	 <li><a href="/kanto/saitama/tsurugashima"><span>鶴ヶ島市</span></a></li>
+	 <li><a href="/kanto/saitama/kawagoe"><span>川越市</span></a></li>
+	 <li><a href="/kanto/saitama/sayama"><span>狭山市</span></a></li>
+	 <li><a href="/kanto/saitama/iruma"><span>入間市</span></a></li>
+	 <li><a href="/kanto/saitama/tokorozawa"><span>所沢市</span></a></li>
+	 </ul></li>
+	 <li class="m_saitamachibu"><span class="chiikititle">秩父地域</span><ul>
+	 <li><a href="/kanto/saitama/chichibu"><span>秩父市</span></a></li>
+	 </ul></li>
+    </ul>
+
+    <label class="chibalabel" for="Panel14">千葉県</label>
+    <input type="checkbox" id="Panel14" class="on-off" />
+    <ul class="chiba">
+	 <li class="m_chibahigasikatusika"><span class="chiikititle">東葛飾地域</span><ul>
+	 <li><a href="/kanto/chiba/noda"><span>野田市</span></a></li>
+	 <li><a href="/kanto/chiba/nagareyama"><span>流山市</span></a></li>
+	 <li><a href="/kanto/chiba/kashiwa"><span>柏市</span></a></li>
+	 <li><a href="/kanto/chiba/abiko"><span>我孫子市</span></a></li>
+	 <li><a href="/kanto/chiba/matsudo"><span>松戸市</span></a></li>
+	 <li><a href="/kanto/chiba/kamagaya"><span>鎌ケ谷市</span></a></li>
+	 <li><a href="/kanto/chiba/shiroishi"><span>白井市</span></a></li>
+	 <li><a href="/kanto/chiba/inzai"><span>印西市</span></a></li>
+	 </ul></li>
+	 <li class="m_chibahokusou"><span class="chiikititle">北総地域</span><ul>
+	 <li><a href="/kanto/chiba/narita"><span>成田市</span></a></li>
+	 <li><a href="/kanto/chiba/katori"><span>香取市</span></a></li>
+	 <li><a href="/kanto/chiba/sakura"><span>佐倉市</span></a></li>
+	 <li><a href="/kanto/chiba/tomisato"><span>富里市</span></a></li>
+	 <li><a href="/kanto/chiba/yachimata"><span>八街市</span></a></li>
+
+	 </ul></li>
+	 <li class="m_chibakatunan"><span class="chiikititle">千葉・葛南地域</span><ul>
+	 <li><a href="/kanto/chiba/urayasu"><span>浦安市</span></a></li>
+	 <li><a href="/kanto/chiba/ichikawa"><span>市川市</span></a></li>
+	 <li><a href="/kanto/chiba/funabashi"><span>船橋市</span></a></li>
+	 <li><a href="/kanto/chiba/yachiyo"><span>八千代市</span></a></li>
+	 <li><a href="/kanto/chiba/narashino"><span>習志野市</span></a></li>
+	 <li><a href="/kanto/chiba/yotsukaidou"><span>四街道市</span></a></li>
+	 <li><a href="/kanto/chiba/mihama"><span>千葉市美浜区</span></a></li>
+	 <li><a href="/kanto/chiba/hanamigawa"><span>千葉市花見川区</span></a></li>
+	 <li><a href="/kanto/chiba/inage"><span>千葉市稲毛区</span></a></li>
+	 <li><a href="/kanto/chiba/chuo"><span>千葉市中央区</span></a></li>
+	 <li><a href="/kanto/chiba/wakaba"><span>千葉市若葉区</span></a></li>
+	 <li><a href="/kanto/chiba/midori"><span>千葉市緑区</span></a></li>
+	 <li><a href="/kanto/chiba/ichihara"><span>市原市</span></a></li>
+	 </ul></li>
+	 <li class="m_chibasanbukaisou"><span class="chiikititle">海匝・山武地域</span><ul>
+	 <li><a href="/kanto/chiba/choshi"><span>銚子市</span></a></li>
+	 <li><a href="/kanto/chiba/asahi"><span>旭市</span></a></li>
+	 <li><a href="/kanto/chiba/sosa"><span>匝瑳市</span></a></li>
+	 <li><a href="/kanto/chiba/sanmu"><span>山武市</span></a></li>
+	 <li><a href="/kanto/chiba/togane"><span>東金市</span></a></li>
+	 <li><a href="/kanto/chiba/ooamishirasato"><span>大網白里市</span></a></li>
+	 </ul></li>
+	 <li class="m_chibahkazusa"><span class="chiikititle">東上総地域</span><ul>
+	 <li><a href="/kanto/chiba/mobara"><span>茂原市</span></a></li>
+	 <li><a href="/kanto/chiba/isumi"><span>いすみ市</span></a></li>
+	 <li><a href="/kanto/chiba/katuura"><span>勝浦市</span></a></li>
+	 </ul></li>
+	 <li class="m_chibananbousou"><span class="chiikititle">南房総地域</span><ul>
+	 <li><a href="/kanto/chiba/sodegaura"><span>袖ケ浦市</span></a></li>
+	 <li><a href="/kanto/chiba/kisarazu"><span>木更津市</span></a></li>
+	 <li><a href="/kanto/chiba/futtsu"><span>富津市</span></a></li>
+	 <li><a href="/kanto/chiba/kimitsu"><span>君津市</span></a></li>
+	 <li><a href="/kanto/chiba/kamogawa"><span>鴨川市</span></a></li>
+	 <li><a href="/kanto/chiba/minamiboso"><span>南房総市</span></a></li>
+	 <li><a href="/kanto/chiba/tateyama"><span>館山市</span></a></li>
+	 </ul></li>
+    </ul>
+
+    <label class="ibaragilabel" for="Panel15">茨城県</label>
+    <input type="checkbox" id="Panel15" class="on-off" />
+    <ul class="ibaragi">
+	 <li class="m_ibaragikenhoku"><span class="chiikititle">県北</span><ul>
+	 <li><a href="/kanto/ibaraki/kitaibaraki"><span>北茨城市</span></a></li>
+	 <li><a href="/kanto/ibaraki/takahagi"><span>高萩市</span></a></li>
+	 <li><a href="/kanto/ibaraki/hitachiomiya"><span>常陸大宮市</span></a></li>
+	 <li><a href="/kanto/ibaraki/hitachiota"><span>常陸太田市</span></a></li>
+	 <li><a href="/kanto/ibaraki/hitachi"><span>日立市</span></a></li>
+	 <li><a href="/kanto/ibaraki/naka"><span>那珂市</span></a></li>
+	 <li><a href="/kanto/ibaraki/hitachinaka"><span>ひたちなか市</span></a></li>
+	 </ul></li>
+	 <li class="m_ibaragikenou"><span class="chiikititle">県央</span><ul>
+	 <li><a href="/kanto/ibaraki/kasama"><span>笠間市</span></a></li>
+	 <li><a href="/kanto/ibaraki/mito"><span>水戸市</span></a></li>
+	<li><a href="/kanto/ibaraki/omitama"><span>小美玉市</span></a></li>
+	 </ul></li>
+	 <li class="m_ibaragirokkou"><span class="chiikititle">鹿行</span><ul>
+	 <li><a href="/kanto/ibaraki/hokota"><span>鉾田市</span></a></li>
+	 <li><a href="/kanto/ibaraki/namegata"><span>行方市</span></a></li>
+	 <li><a href="/kanto/ibaraki/kashima"><span>鹿嶋市</span></a></li>
+	 <li><a href="/kanto/ibaraki/itako"><span>潮来市</span></a></li>
+	 <li><a href="/kanto/ibaraki/kasumi"><span>神栖市</span></a></li>
+	 </ul></li>
+	 <li class="m_ibaragikenisi"><span class="chiikititle">県西</span><ul>
+	 <li><a href="/kanto/ibaraki/koga"><span>古河市</span></a></li>
+	 <li><a href="/kanto/ibaraki/yuki"><span>結城市</span></a></li>
+	 <li><a href="/kanto/ibaraki/chikusei"><span>筑西市</span></a></li>
+	 <li><a href="/kanto/ibaraki/sakuragawa"><span>桜川市</span></a></li>
+	 <li><a href="/kanto/ibaraki/shimotsuma"><span>下妻市</span></a></li>
+	 <li><a href="/kanto/ibaraki/bando"><span>坂東市</span></a></li>
+	 <li><a href="/kanto/ibaraki/joso"><span>常総市</span></a></li>
+	 </ul></li>
+	 <li class="m_ibaragikennan"><span class="chiikititle">県南</span><ul>
+	 <li><a href="/kanto/ibaraki/ishioka"><span>石岡市</span></a></li>
+	 <li><a href="/kanto/ibaraki/tsukuba"><span>つくば市</span></a></li>
+	 <li><a href="/kanto/ibaraki/tsuchiura"><span>土浦市</span></a></li>
+	 <li><a href="/kanto/ibaraki/kasumigaura"><span>かすみがうら市</span></a></li>
+	 <li><a href="/kanto/ibaraki/tsukubamirai"><span>つくばみらい市</span></a></li>
+	 <li><a href="/kanto/ibaraki/ushiku"><span>牛久市</span></a></li>
+	 <li><a href="/kanto/ibaraki/moriya"><span>守谷市</span></a></li>
+	 <li><a href="/kanto/ibaraki/toride"><span>取手市</span></a></li>
+	 <li><a href="/kanto/ibaraki/ryugasaki"><span>龍ケ崎市</span></a></li>
+	 <li><a href="/kanto/ibaraki/inashiki"><span>稲敷市</span></a></li>
+	 </ul></li>
+    </ul>
+    <label class="totigilabel" for="Panel16">栃木県</label>
+    <input type="checkbox" id="Panel16" class="on-off" />
+    <ul class="totigi">
+	 <li class="m_nasusibu"><span class="chiikititle">那須支部</span><ul>
+	 <li><a href="/kanto/tochigi/nasushiobara"><span>那須塩原市</span></a></li>
+	 <li><a href="/kanto/tochigi/otawara"><span>大田原市</span></a></li>
+	 </ul></li>
+	 <li class="m_minaminasusibu"><span class="chiikititle">南那須支部</span><ul>
+	 <li><a href="/kanto/tochigi/nasukarasuyama"><span>那須烏山市</span></a></li>
+	 </ul></li>
+	 <li class="m_sioyasibu"><span class="chiikititle">塩谷支部</span><ul>
+	 <li><a href="/kanto/tochigi/yaita"><span>矢板市</span></a></li>
+	 <li><a href="/kanto/tochigi/sakura"><span>さくら市</span></a></li>
+	 <li><a href="/kanto/tochigi/oyama"><span>小山市</span></a></li>
+	 <li><a href="/kanto/tochigi/mooka"><span>真岡市</span></a></li>
+	 </ul></li>
+	 <li class="m_kamitogasibu"><span class="chiikititle">上都賀支部</span><ul>
+	 <li><a href="/kanto/tochigi/nikko"><span>日光市</span></a></li>
+	 <li><a href="/kanto/tochigi/kanuma"><span>鹿沼市</span></a></li>
+	 </ul></li>
+	 <li class="m_utunomiyasibu"><span class="chiikititle">宇都宮支部</span><ul>
+	 <li><a href="/kanto/tochigi/utsunomiya"><span>宇都宮市</span></a></li>
+	 </ul></li>
+	 <li class="m_simotogasibu"><span class="chiikititle">下都賀支部</span><ul>
+	 <li><a href="/kanto/tochigi/shimotsuke"><span>下野市</span></a></li>
+	 <li><a href="/kanto/tochigi/tochigishi"><span>栃木市</span></a></li>
+	 </ul></li>
+	 <li class="m_asikaga"><span class="chiikititle">足利・佐野支部</span><ul>
+	 <li><a href="/kanto/tochigi/sano"><span>佐野市</span></a></li>
+	 <li><a href="/kanto/tochigi/ashikaga"><span>足利市</span></a></li>
+	 </ul></li>
+    </ul>
+    <label class="gunmalabel" for="Panel17">群馬県</label>
+    <input type="checkbox" id="Panel17" class="on-off" />
+    <ul class="gunma">
+	 <li class="m_gunmatoubu"><span class="chiikititle">東部地域</span><ul>
+	 <li><a href="/kanto/gunma/kiryu"><span>桐生市</span></a></li>
+	 <li><a href="/kanto/gunma/ota"><span>太田市</span></a></li>
+	 <li><a href="/kanto/gunma/tatebayashi"><span>館林市</span></a></li>
+	 <li><a href="/kanto/gunma/midori"><span>みどり市</span></a></li>
+	 </ul></li>
+	 <li class="m_gunmachubu"><span class="chiikititle">中部地域</span><ul>
+	 <li><a href="/kanto/gunma/maebashi"><span>前橋市</span></a></li>
+	 <li><a href="/kanto/gunma/isesaki"><span>伊勢崎市</span></a></li>
+	 <li><a href="/kanto/gunma/shibukawa"><span>渋川市</span></a></li>
+	 </ul></li>
+	 <li class="m_gunmaseibu"><span class="chiikititle">西部地域</span><ul>
+	 <li><a href="/kanto/gunma/takasaki"><span>高崎市</span></a></li>
+	 <li><a href="/kanto/gunma/fujioka"><span>藤岡市</span></a></li>
+	 <li><a href="/kanto/gunma/tomioka"><span>富岡市</span></a></li>
+	 <li><a href="/kanto/gunma/annaka"><span>安中市</span></a></li>
+	 </ul></li>
+    </ul>
+
+
+
+<div class="labelreset"><span>日本地図に戻る</span></div>
+
+
+</div><!-- end of #mapmenu -->
+
+</div><!-- end of #mainmapin -->
+</div><!-- end of #mainmap -->
+
+<div class="of_h lPtitle04 mb50">
+	<h2>よくあるご質問</h2>
+	<div id="lPqanda">
+		<dl>
+			<dt>お客様</dt>
+				<dd>ホームページから、折込する地域を選んで新聞折込のお申し込み。</dd>
+			<dt>当社</dt>
+				<dd>お客様のご依頼内容でチラシをご指定の期日・新聞社・エリアに沿って新聞販売店舗へ配送。</dd>
+			<dt>新聞販売店</dt>
+				<dd>届いたチラシは丁寧に新聞紙に折り込まれ、次々に出荷されます。</dd>
+			<dt>地域の家庭へ</dt>
+				<dd>新聞配達の契約をしているエリア内の顧客へ届きます。</dd>
+		</dl>
+	</div>
+</div>
+
+<div id="lPcontact" class="of_h mb50">
+	<h2>ご相談・お申し込みはこちら</h2>
+	<p>お気軽にどうぞ！</p>
+	<a href="/contact/"></a>
+</div>
+
+</div><!-- end of #lpPage -->
+
+  </div>
+  <!-- ▲メイン -->
+
+
+
+
+<!-- ▼サイドバー -->
+<div class="sidebar">
+
+  <div id="dummy_box"></div>
+
+<img src="/contents/img/outline/allok.jpg" width="258px" style="margin-bottom:10px;">
+  <div class="fixed_menu">
+
+  	<!-- ▼ログイン -->
+  	<div id="login_widget" data-guidetext="初めての方"></div>
+  	<!-- ▲ログイン -->
+
+<ul class="accordion">
+    <li>
+        <h2><span>ご登録</span></h2>
+        <ul style="display: block;">
+            <li><a href="p_touroku.html#detail0010">ご登録について</a></li>
+        </ul>
+    </li>
+    <li>
+        <h2><span>ご注文ガイド</span></h2>
+        <ul>
+            <li><a href="p_order.html#detail0020">ご注文の操作手順</a></li>
+            <li><a href="p_order.html#detail0030">ご注文から折込までの流れ</a></li>
+            <li><a href="p_order.html#detail0040">イメージ入稿について</a></li>
+            <li><a href="p_order.html#detail0050">チラシ納入先倉庫</a></li>
+        </ul>
+    </li>
+    <li>
+        <h2><span>お支払い</span></h2>
+        <ul>
+	<li><a href="p_pay.html#detail0060">お支払い方法について</a></li>
+	<li><a href="p_pay.html#detail0070">お見積書・ご請求書・領収書について</a></li>
+        </ul>
+    </li>
+    <li>
+        <h2><span>データ入稿ガイド</span></h2>
+        <ul>
+          <li><a href="p_howtodata.html#detail0080">データ入稿の方法と注意点</a></li>
+          <li><a href="p_howtodata.html#detail0090">データ圧縮の方法</a></li>
+          <li><a href="p_howtodata.html#detail0100">テンプレート</a></li>
+          <li><a href="p_howtodata.html#detail0110">印刷予備送付について</a></li>
+        </ul>
+    </li>
+    <li>
+        <h2><span>変更・キャンセル</span></h2>
+        <ul>
+          <li><a href="p_change.html#detail0120">増刷注文（有料）について</a></li>
+          <li><a href="p_change.html#detail0130">キャンセル・変更について</a></li>
+        </ul>
+    </li>
+    <li>
+        <h2><span>その他</span></h2>
+        <ul>
+          <li><a href="p_other.html#detail0180">広告基準について</a></li>
+        </ul>
+    </li>
+
+
+</ul>
+
+
+
+  </div>
+</div>
+<!-- ▲サイドバー -->
+
+
+  </div>
+
+
+<div id="footer">
+
+<div id="footer_b">
+	<div class="footer-content">
+
+<div class="footer_bin">
+<div class="footer_bin1">
+<h2>全国対応！地域密着型で反響がある信頼度の高い新聞折込チラシを24時間年中無休で受付！</h2>
+<p>新聞折込チラシなら新聞折込の激安通販サイト【オリコメイト】<br>
+営業時間 10：00～19：00（定休日：土・日・祝日） </p>
+
+<p>〒227-0051 神奈川県横浜市青葉区千草台43-5<br>
+TEL：045-971-6966　FAX：045-971-7654</p>
+</div>
+
+<div class="footer_bin2">
+<h2>初めての方へ</h2>
+<ul>
+<li><a href="/contents/detail.html">初めてチラシを新聞折込される方へ</a></li>
+<li><a href="/contents/p_touroku.html">ご登録方法について</a></li>
+<li><a href="/contents/p_order.html">ご注文ガイド</a></li>
+<li><a href="/contents/p_pay.html">お支払い方法</a></li>
+<li><a href="/contents/p_howtodata.html">データ入稿ガイド</a></li>
+<li><a href="/contents/p_change.html">変更・キャンセル</a></li>
+<li><a href="/contents/p_other.html">広告基準について</a></li>
+<li><a href="/contents/qa.html">よくあるご質問</a></li>
+</ul>
+</div>
+
+<div class="footer_bin2">
+<h2>新聞折込について</h2>
+<ul>
+<li><a href="/contents/whatis01.html">新聞折込とは？</a></li>
+<li><a href="/contents/whatis02.html">新聞折込の広告戦略</a></li>
+<li><a href="/contents/whatis03.html">新聞折込のマーケティング</a></li>
+<li><a href="/contents/whatis04.html">お客様の反響を上げる新聞折込</a></li>
+<li><a href="/user_data/deadline.php">締切スケジュール</a></li>
+</ul>
+</div>
+
+<div class="footer_bin3">
+<h2>マイページ</h2>
+<ul>
+<li><a href="/entry/kiyaku.php">新規会員登録</a></li>
+<li><a href="/mypage/login.php">ログイン</a></li>
+<li><a href="/forgot/" onclick="eccube.openWindow('/forgot/','forget','600','460',{scrollbars:'no',resizable:'no'}); return false;" target="_blank">パスワードの再発行</a></li>
+</ul>
+</div>
+
+
+
+</div><!-- /footer_bin -->
+
+
+<div class="footer_bin">
+<div class="footer_bin4">
+	<h2 class="midasi_erea"><span>対応エリア</span></h2>
+</div>
+<div class="footer_bin5">
+<h2>新聞折込が可能な都道府県市区です。※全国対応しております。記載されていない都道府県市区も対応可能です。お気軽にお問い合わせください。</h2>
+<h3>東京都</h3><ul>
+<li><a href="/orikomi_area/tokyo/chiyoda.html">千代田区</a></li>
+<li><a href="/orikomi_area/tokyo/chuo.html">中央区</a></li>
+<li><a href="/orikomi_area/tokyo/minato.html">港区</a></li>
+<li><a href="/orikomi_area/tokyo/shinjuku.html">新宿区</a></li>
+<li><a href="/orikomi_area/tokyo/bunkyo.html">文京区</a></li>
+<li><a href="/orikomi_area/tokyo/daito.html">台東区</a></li>
+<li><a href="/orikomi_area/tokyo/sumida.html">墨田区</a></li>
+<li><a href="/orikomi_area/tokyo/koutou.html">江東区</a></li>
+<li><a href="/orikomi_area/tokyo/shinagawa.html">品川区</a></li>
+<li><a href="/orikomi_area/tokyo/meguro.html">目黒区</a></li>
+<li><a href="/orikomi_area/tokyo/oota.html">大田区</a></li>
+<li><a href="/orikomi_area/tokyo/setagaya.html">世田谷区</a></li>
+<li><a href="/orikomi_area/tokyo/shibuya.html">渋谷区</a></li>
+<li><a href="/orikomi_area/tokyo/nakano.html">中野区</a></li>
+<li><a href="/orikomi_area/tokyo/suginami.html">杉並区</a></li>
+<li><a href="/orikomi_area/tokyo/toshima.html">豊島区</a></li>
+<li><a href="/orikomi_area/tokyo/kita.html">北区</a></li>
+<li><a href="/orikomi_area/tokyo/arakawa.html">荒川区</a></li>
+<li><a href="/orikomi_area/tokyo/itabashi.html">板橋区</a></li>
+<li><a href="/orikomi_area/tokyo/nerima.html">練馬区</a></li>
+<li><a href="/orikomi_area/tokyo/adachi.html">足立区</a></li>
+<li><a href="/orikomi_area/tokyo/katsushika.html">葛飾区</a></li>
+<li><a href="/orikomi_area/tokyo/edogawa.html">江戸川区</a></li>
+<li><a href="/orikomi_area/tokyo/hachiouji.html">八王子市</a></li>
+<li><a href="/orikomi_area/tokyo/tachikawa.html">立川市</a></li>
+<li><a href="/orikomi_area/tokyo/musashino.html">武蔵野市</a></li>
+<li><a href="/orikomi_area/tokyo/mitaka.html">三鷹市</a></li>
+<li><a href="/orikomi_area/tokyo/oume.html">青梅市</a></li>
+<li><a href="/orikomi_area/tokyo/fuchu.html">府中市</a></li>
+<li><a href="/orikomi_area/tokyo/akishima.html">昭島市</a></li>
+<li><a href="/orikomi_area/tokyo/chofu.html">調布市</a></li>
+<li><a href="/orikomi_area/tokyo/machida.html">町田市</a></li>
+<li><a href="/orikomi_area/tokyo/koganei.html">小金井市</a></li>
+<li><a href="/orikomi_area/tokyo/kodaira.html">小平市</a></li>
+<li><a href="/orikomi_area/tokyo/hino.html">日野市</a></li>
+<li><a href="/orikomi_area/tokyo/higashimurayama.html">東村山市</a></li>
+<li><a href="/orikomi_area/tokyo/kokubunji.html">国分寺市</a></li>
+<li><a href="/orikomi_area/tokyo/kunitachi.html">国立市</a></li>
+<li><a href="/orikomi_area/tokyo/fussa.html">福生市</a></li>
+<li><a href="/orikomi_area/tokyo/komae.html">狛江市</a></li>
+<li><a href="/orikomi_area/tokyo/higashiyamato.html">東大和市</a></li>
+<li><a href="/orikomi_area/tokyo/kiyose.html">清瀬市</a></li>
+<li><a href="/orikomi_area/tokyo/higashikurume.html">東久留米市</a></li>
+<li><a href="/orikomi_area/tokyo/musashimurayama.html">武蔵村山市</a></li>
+<li><a href="/orikomi_area/tokyo/tama.html">多摩市</a></li>
+<li><a href="/orikomi_area/tokyo/inagi.html">稲城市</a></li>
+<li><a href="/orikomi_area/tokyo/hamura.html">羽村市</a></li>
+<li><a href="/orikomi_area/tokyo/akiruno.html">あきる野市</a></li>
+<li><a href="/orikomi_area/tokyo/nishitokyo.html">西東京市</a></li>
+</ul><br>
+<h3>神奈川県</h3><ul>
+<li><a href="/orikomi_area/kanagawa/tsurumi.html">横浜市鶴見区</a></li>
+<li><a href="/orikomi_area/kanagawa/kanagawaku.html">横浜市神奈川区</a></li>
+<li><a href="/orikomi_area/kanagawa/nishi.html">横浜市西区</a></li>
+<li><a href="/orikomi_area/kanagawa/naka.html">横浜市中区</a></li>
+<li><a href="/orikomi_area/kanagawa/yokohama-minami.html">横浜市南区</a></li>
+<li><a href="/orikomi_area/kanagawa/hodogaya.html">横浜市保土ケ谷区</a></li>
+<li><a href="/orikomi_area/kanagawa/isogo.html">横浜市磯子区</a></li>
+<li><a href="/orikomi_area/kanagawa/kanazawa.html">横浜市金沢区</a></li>
+<li><a href="/orikomi_area/kanagawa/kohoku.html">横浜市港北区</a></li>
+<li><a href="/orikomi_area/kanagawa/totsuka.html">横浜市戸塚区</a></li>
+<li><a href="/orikomi_area/kanagawa/konan.html">横浜市港南区</a></li>
+<li><a href="/orikomi_area/kanagawa/asahi.html">横浜市旭区</a></li>
+<li><a href="/orikomi_area/kanagawa/yokohama-midori.html">横浜市緑区</a></li>
+<li><a href="/orikomi_area/kanagawa/seya.html">横浜市瀬谷区</a></li>
+<li><a href="/orikomi_area/kanagawa/sakae.html">横浜市栄区</a></li>
+<li><a href="/orikomi_area/kanagawa/izumi.html">横浜市泉区</a></li>
+<li><a href="/orikomi_area/kanagawa/aoba.html">横浜市青葉区</a></li>
+<li><a href="/orikomi_area/kanagawa/tuzuki.html">横浜市都筑区</a></li>
+<li><a href="/orikomi_area/kanagawa/kawasaki.html">川崎市川崎区</a></li>
+<li><a href="/orikomi_area/kanagawa/saiwai.html">川崎市幸区</a></li>
+<li><a href="/orikomi_area/kanagawa/nakahara.html">川崎市中原区</a></li>
+<li><a href="/orikomi_area/kanagawa/takatsu.html">川崎市高津区</a></li>
+<li><a href="/orikomi_area/kanagawa/tama.html">川崎市多摩区</a></li>
+<li><a href="/orikomi_area/kanagawa/miyamae.html">川崎市宮前区</a></li>
+<li><a href="/orikomi_area/kanagawa/asao.html">川崎市麻生区</a></li>
+<li><a href="/orikomi_area/kanagawa/sagamihara-midori.html">相模原市緑区</a></li>
+<li><a href="/orikomi_area/kanagawa/chuo.html">相模原市中央区</a></li>
+<li><a href="/orikomi_area/kanagawa/sagamihara-minami.html">相模原市南区</a></li>
+<li><a href="/orikomi_area/kanagawa/yokosuka.html">横須賀市</a></li>
+<li><a href="/orikomi_area/kanagawa/hiratsuka.html">平塚市</a></li>
+<li><a href="/orikomi_area/kanagawa/kamakura.html">鎌倉市</a></li>
+<li><a href="/orikomi_area/kanagawa/fujisawa.html">藤沢市</a></li>
+<li><a href="/orikomi_area/kanagawa/odawara.html">小田原市</a></li>
+<li><a href="/orikomi_area/kanagawa/chigasaki.html">茅ヶ崎市</a></li>
+<li><a href="/orikomi_area/kanagawa/zushi.html">逗子市</a></li>
+<li><a href="/orikomi_area/kanagawa/miura.html">三浦市</a></li>
+<li><a href="/orikomi_area/kanagawa/hadano.html">秦野市</a></li>
+<li><a href="/orikomi_area/kanagawa/atsugi.html">厚木市</a></li>
+<li><a href="/orikomi_area/kanagawa/yamato.html">大和市</a></li>
+<li><a href="/orikomi_area/kanagawa/isehara.html">伊勢原市</a></li>
+<li><a href="/orikomi_area/kanagawa/ebina.html">海老名市</a></li>
+<li><a href="/orikomi_area/kanagawa/zama.html">座間市</a></li>
+<li><a href="/orikomi_area/kanagawa/minamiashigara.html">南足柄市</a></li>
+<li><a href="/orikomi_area/kanagawa/ayase.html">綾瀬市</a></li>
+</ul><br>
+<h3>埼玉県</h3><ul>
+<li><a href="/orikomi_area/saitama/nishi.html">さいたま市 西区</a></li>
+<li><a href="/orikomi_area/saitama/kita.html">さいたま市 北区</a></li>
+<li><a href="/orikomi_area/saitama/omiya.html">さいたま市 大宮区</a></li>
+<li><a href="/orikomi_area/saitama/minuma.html">さいたま市 見沼区</a></li>
+<li><a href="/orikomi_area/saitama/chuo.html">さいたま市 中央区</a></li>
+<li><a href="/orikomi_area/saitama/sakura.html">さいたま市 桜区</a></li>
+<li><a href="/orikomi_area/saitama/urawa.html">さいたま市 浦和区</a></li>
+<li><a href="/orikomi_area/saitama/minami.html">さいたま市 南区</a></li>
+<li><a href="/orikomi_area/saitama/midori.html">さいたま市 緑区</a></li>
+<li><a href="/orikomi_area/saitama/iwatsuki.html">さいたま市 岩槻区</a></li>
+<li><a href="/orikomi_area/saitama/kawagoe.html">川越市</a></li>
+<li><a href="/orikomi_area/saitama/kumagaya.html">熊谷市</a></li>
+<li><a href="/orikomi_area/saitama/kawaguchi.html">川口市</a></li>
+<li><a href="/orikomi_area/saitama/gyoda.html">行田市</a></li>
+<li><a href="/orikomi_area/saitama/chichibu.html">秩父市</a></li>
+<li><a href="/orikomi_area/saitama/tokorozawa.html">所沢市</a></li>
+<li><a href="/orikomi_area/saitama/hanno.html">飯能市</a></li>
+<li><a href="/orikomi_area/saitama/kazo.html">加須市</a></li>
+<li><a href="/orikomi_area/saitama/honjo.html">本庄市</a></li>
+<li><a href="/orikomi_area/saitama/higashimatsuyama.html">東松山市</a></li>
+<li><a href="/orikomi_area/saitama/kasukabe.html">春日部市</a></li>
+<li><a href="/orikomi_area/saitama/sayama.html">狭山市</a></li>
+<li><a href="/orikomi_area/saitama/hanyu.html">羽生市</a></li>
+<li><a href="/orikomi_area/saitama/konosu.html">鴻巣市</a></li>
+<li><a href="/orikomi_area/saitama/fukaya.html">深谷市</a></li>
+<li><a href="/orikomi_area/saitama/ageo.html">上尾市</a></li>
+<li><a href="/orikomi_area/saitama/soka.html">草加市</a></li>
+<li><a href="/orikomi_area/saitama/koshigaya.html">越谷市</a></li>
+<li><a href="/orikomi_area/saitama/warabi.html">蕨市</a></li>
+<li><a href="/orikomi_area/saitama/toda.html">戸田市</a></li>
+<li><a href="/orikomi_area/saitama/iruma.html">入間市</a></li>
+<li><a href="/orikomi_area/saitama/asaka.html">朝霞市</a></li>
+<li><a href="/orikomi_area/saitama/shiki.html">志木市</a></li>
+<li><a href="/orikomi_area/saitama/wako.html">和光市</a></li>
+<li><a href="/orikomi_area/saitama/niza.html">新座市</a></li>
+<li><a href="/orikomi_area/saitama/okegawa.html">桶川市</a></li>
+<li><a href="/orikomi_area/saitama/kuki.html">久喜市</a></li>
+<li><a href="/orikomi_area/saitama/kitamoto.html">北本市</a></li>
+<li><a href="/orikomi_area/saitama/yashio.html">八潮市</a></li>
+<li><a href="/orikomi_area/saitama/fujimi.html">富士見市</a></li>
+<li><a href="/orikomi_area/saitama/misato.html">三郷市</a></li>
+<li><a href="/orikomi_area/saitama/hasuda.html">蓮田市</a></li>
+<li><a href="/orikomi_area/saitama/sakado.html">坂戸市</a></li>
+<li><a href="/orikomi_area/saitama/satsute.html">幸手市</a></li>
+<li><a href="/orikomi_area/saitama/tsurugashima.html">鶴ヶ島市</a></li>
+<li><a href="/orikomi_area/saitama/hidaka.html">日高市</a></li>
+<li><a href="/orikomi_area/saitama/yoshikawa.html">吉川市</a></li>
+<li><a href="/orikomi_area/saitama/fujimino.html">ふじみ野市</a></li>
+</ul><br>
+<h3>千葉県</h3><ul>
+<li><a href="/orikomi_area/chiba/chuo.html">千葉市中央区</a></li>
+<li><a href="/orikomi_area/chiba/hanamigawa.html">千葉市花見川区</a></li>
+<li><a href="/orikomi_area/chiba/inage.html">千葉市稲毛区</a></li>
+<li><a href="/orikomi_area/chiba/wakaba.html">千葉市若葉区</a></li>
+<li><a href="/orikomi_area/chiba/midori.html">千葉市緑区</a></li>
+<li><a href="/orikomi_area/chiba/mihama.html">千葉市美浜区</a></li>
+<li><a href="/orikomi_area/chiba/choshi.html">銚子市</a></li>
+<li><a href="/orikomi_area/chiba/ichikawa.html">市川市</a></li>
+<li><a href="/orikomi_area/chiba/funabashi.html">船橋市</a></li>
+<li><a href="/orikomi_area/chiba/tateyama.html">館山市</a></li>
+<li><a href="/orikomi_area/chiba/kisarazu.html">木更津市</a></li>
+<li><a href="/orikomi_area/chiba/matsudo.html">松戸市</a></li>
+<li><a href="/orikomi_area/chiba/noda.html">野田市</a></li>
+<li><a href="/orikomi_area/chiba/mobara.html">茂原市</a></li>
+<li><a href="/orikomi_area/chiba/narita.html">成田市</a></li>
+<li><a href="/orikomi_area/chiba/sakura.html">佐倉市</a></li>
+<li><a href="/orikomi_area/chiba/togane.html">東金市</a></li>
+<li><a href="/orikomi_area/chiba/asahi.html">旭市</a></li>
+<li><a href="/orikomi_area/chiba/narashino.html">習志野市</a></li>
+<li><a href="/orikomi_area/chiba/kashiwa.html">柏市</a></li>
+<li><a href="/orikomi_area/chiba/katuura.html">勝浦市</a></li>
+<li><a href="/orikomi_area/chiba/ichihara.html">市原市</a></li>
+<li><a href="/orikomi_area/chiba/nagareyama.html">流山市</a></li>
+<li><a href="/orikomi_area/chiba/yachiyo.html">八千代市</a></li>
+<li><a href="/orikomi_area/chiba/abiko.html">我孫子市</a></li>
+<li><a href="/orikomi_area/chiba/kamogawa.html">鴨川市</a></li>
+<li><a href="/orikomi_area/chiba/kamagaya.html">鎌ケ谷市</a></li>
+<li><a href="/orikomi_area/chiba/kimitsu.html">君津市</a></li>
+<li><a href="/orikomi_area/chiba/futtsu.html">富津市</a></li>
+<li><a href="/orikomi_area/chiba/urayasu.html">浦安市</a></li>
+<li><a href="/orikomi_area/chiba/yotsukaidou.html">四街道市</a></li>
+<li><a href="/orikomi_area/chiba/sodegaura.html">袖ケ浦市</a></li>
+<li><a href="/orikomi_area/chiba/yachimata.html">八街市</a></li>
+<li><a href="/orikomi_area/chiba/inzai.html">印西市</a></li>
+<li><a href="/orikomi_area/chiba/shiroishi.html">白井市</a></li>
+<li><a href="/orikomi_area/chiba/tomisato.html">富里市</a></li>
+<li><a href="/orikomi_area/chiba/minamiboso.html">南房総市</a></li>
+<li><a href="/orikomi_area/chiba/sosa.html">匝瑳市</a></li>
+<li><a href="/orikomi_area/chiba/katori.html">香取市</a></li>
+<li><a href="/orikomi_area/chiba/sanmu.html">山武市</a></li>
+<li><a href="/orikomi_area/chiba/isumi.html">いすみ市</a></li>
+<li><a href="/orikomi_area/chiba/ooamishirasato.html">大網白里市</a></li>
+</ul><br>
+<h3>茨城県</h3><ul>
+<li><a href="/orikomi_area/ibaraki/mito.html">水戸市</a></li>
+<li><a href="/orikomi_area/ibaraki/hitachi.html">日立市</a></li>
+<li><a href="/orikomi_area/ibaraki/tsuchiura.html">土浦市</a></li>
+<li><a href="/orikomi_area/ibaraki/koga.html">古河市</a></li>
+<li><a href="/orikomi_area/ibaraki/ishioka.html">石岡市</a></li>
+<li><a href="/orikomi_area/ibaraki/yuki.html">結城市</a></li>
+<li><a href="/orikomi_area/ibaraki/ryugasaki.html">龍ケ崎市</a></li>
+<li><a href="/orikomi_area/ibaraki/shimotsuma.html">下妻市</a></li>
+<li><a href="/orikomi_area/ibaraki/joso.html">常総市</a></li>
+<li><a href="/orikomi_area/ibaraki/hitachiota.html">常陸太田市</a></li>
+<li><a href="/orikomi_area/ibaraki/takahagi.html">高萩市</a></li>
+<li><a href="/orikomi_area/ibaraki/kitaibaraki.html">北茨城市</a></li>
+<li><a href="/orikomi_area/ibaraki/kasama.html">笠間市</a></li>
+<li><a href="/orikomi_area/ibaraki/toride.html">取手市</a></li>
+<li><a href="/orikomi_area/ibaraki/ushiku.html">牛久市</a></li>
+<li><a href="/orikomi_area/ibaraki/tsukuba.html">つくば市</a></li>
+<li><a href="/orikomi_area/ibaraki/hitachinaka.html">ひたちなか市</a></li>
+<li><a href="/orikomi_area/ibaraki/kashima.html">鹿嶋市</a></li>
+<li><a href="/orikomi_area/ibaraki/itako.html">潮来市</a></li>
+<li><a href="/orikomi_area/ibaraki/moriya.html">守谷市</a></li>
+<li><a href="/orikomi_area/ibaraki/hitachiomiya.html">常陸大宮市</a></li>
+<li><a href="/orikomi_area/ibaraki/naka.html">那珂市</a></li>
+<li><a href="/orikomi_area/ibaraki/chikusei.html">筑西市</a></li>
+<li><a href="/orikomi_area/ibaraki/bando.html">坂東市</a></li>
+<li><a href="/orikomi_area/ibaraki/inashiki.html">稲敷市</a></li>
+<li><a href="/orikomi_area/ibaraki/kasumigaura.html">かすみがうら市</a></li>
+<li><a href="/orikomi_area/ibaraki/sakuragawa.html">桜川市</a></li>
+<li><a href="/orikomi_area/ibaraki/kasumi.html">神栖市</a></li>
+<li><a href="/orikomi_area/ibaraki/namegata.html">行方市</a></li>
+<li><a href="/orikomi_area/ibaraki/hokota.html">鉾田市</a></li>
+<li><a href="/orikomi_area/ibaraki/tsukubamirai.html">つくばみらい市</a></li>
+<li><a href="/orikomi_area/ibaraki/omitama.html">小美玉市</a></li>
+</ul><br>
+<h3>栃木県</h3><ul>
+<li><a href="/orikomi_area/tochigi/utsunomiya.html">宇都宮市</a></li>
+<li><a href="/orikomi_area/tochigi/ashikaga.html">足利市</a></li>
+<li><a href="/orikomi_area/tochigi/tochigishi.html">栃木市</a></li>
+<li><a href="/orikomi_area/tochigi/sano.html">佐野市</a></li>
+<li><a href="/orikomi_area/tochigi/kanuma.html">鹿沼市</a></li>
+<li><a href="/orikomi_area/tochigi/nikko.html">日光市</a></li>
+<li><a href="/orikomi_area/tochigi/oyama.html">小山市</a></li>
+<li><a href="/orikomi_area/tochigi/mooka.html">真岡市</a></li>
+<li><a href="/orikomi_area/tochigi/otawara.html">大田原市</a></li>
+<li><a href="/orikomi_area/tochigi/yaita.html">矢板市</a></li>
+<li><a href="/orikomi_area/tochigi/nasushiobara.html">那須塩原市</a></li>
+<li><a href="/orikomi_area/tochigi/sakura.html">さくら市</a></li>
+<li><a href="/orikomi_area/tochigi/nasukarasuyama.html">那須烏山市</a></li>
+<li><a href="/orikomi_area/tochigi/shimotsuke.html">下野市</a></li>
+</ul><br>
+<h3>群馬県</h3><ul>
+<li><a href="/orikomi_area/gunma/maebashi.html">前橋市</a></li>
+<li><a href="/orikomi_area/gunma/takasaki.html">高崎市</a></li>
+<li><a href="/orikomi_area/gunma/kiryu.html">桐生市</a></li>
+<li><a href="/orikomi_area/gunma/isesaki.html">伊勢崎市</a></li>
+<li><a href="/orikomi_area/gunma/ota.html">太田市</a></li>
+<li><a href="/orikomi_area/gunma/tatebayashi.html">館林市</a></li>
+<li><a href="/orikomi_area/gunma/shibukawa.html">渋川市</a></li>
+<li><a href="/orikomi_area/gunma/fujioka.html">藤岡市</a></li>
+<li><a href="/orikomi_area/gunma/tomioka.html">富岡市</a></li>
+<li><a href="/orikomi_area/gunma/annaka.html">安中市</a></li>
+<li><a href="/orikomi_area/gunma/midori.html">みどり市</a></li>
+</ul>
+</div>
+
+</div><!-- /footer_bin -->
+
+
+
+
+
+	</div>
+</div>
+
+
+
+<div id="footer_c">
+<div class="footer-content">
+
+<div id="sslimg">
+<span id="ss_img_wrapper_115-55_image_ja">
+		<img alt="SSL Certificate" border="0" id="ss_img" src="//seal.alphassl.com/SiteSeal/images/alpha_noscript_115-55_ja.gif">
+		</span>	<script type="text/javascript" src="//seal.alphassl.com/SiteSeal/alpha_image_115-55_ja.js" defer="defer"></script>
+</div>
+
+	<div class="footer-links">
+		<ul>
+		<li><a href="/contents/profile.html">会社概要</a></li>
+		<li><a href="/contents/privacy.html">個人情報の取り扱いについて</a></li>
+		<li><a href="/contents/notation.html">特定商取引法にもとづく表記</a></li>
+		<li><a href="/contents/terms.html">ご利用規約</a></li>
+		<li><a href="/contents/disaster.html">大規模災害時について</a></li>
+		<li><a href="/contact/">お問い合わせ</a></li>
+		</ul>
+        </div>
+
+        <div class="footer-copyright">
+            &copy; ＠orikomi, All Rights Reserved.
+        </div>
+
+    </div>
+</div>
+
+</div>
+<!-- /footer_b -->
+
+</div>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-63340630-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  </body><!-- ▲BODY部 エンド -->
+
+  </html>
